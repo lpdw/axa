@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15">
+<svg id="stats1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="37" viewBox="0 0 32 37">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -29,13 +29,22 @@
 <?xpacket end="w"?></metadata>
 <defs>
     <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #5a8fa6;
+        fill-rule: evenodd;
+      }
+
       .cls-1 {
-        font-size: 18px;
-        fill: #5a8fa6;
-        font-family: ITCAvantGardeStd;
-        font-weight: 300;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-width: 3px;
       }
     </style>
   </defs>
-  <text id="_" data-name="€" class="cls-1" x="0.157" y="0.219">€</text>
+  <path id="Polygone_1_copie_10" data-name="Polygone 1 copie 10" class="cls-1" d="M340,1652.24L325.017,1661l-15-8.74L310,1634.77l14.981-8.77,15,8.74Z" transform="translate(-309 -1625)"/>
+  <path id="Forme_11" data-name="Forme 11" class="cls-2" d="M316,1645v-1h18v1H316" transform="translate(-309 -1625)"/>
+  <image id="Objet_dynamique_vectoriel_copie" data-name="Objet dynamique vectoriel copie" x="6" y="13" width="18" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAMCAMAAABYzB2OAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEV6pLb///96pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLZ6pLYAAACPYMeZAAAANHRSTlMAABAFUIqWgJ4BkX1gA6FrB7D7WxIwRg2+9k5P+qcGFMnxQP2sWrbT6zRoo0zkKXKXPh+JErZYTgAAAAFiS0dENd622WsAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhBAoPGzLhTPkEAAAAeElEQVQI11XOWxeBUBQE4DlJHJx0I1GhdCG32P//tylrnVZ7nma+pwFGMajPWDAxzanFCZjRnJNc0HLFSNm0BiPH9Xwg2PzH1lJAuIv2XReil0NMSXo8nTNo8vNLEZdVfYWmW94o3KPHE5pe9JZdaz8YyP5K9k2IH5XRCM1asRAjAAAAAElFTkSuQmCC"/>
 </svg>

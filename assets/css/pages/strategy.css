@@ -1,4 +1,18 @@
 body {
   background-color: #f8f8f8; }
 
+main {
+  max-width: 960px;
+  margin: 0 auto; }
+
+.title {
+  font-size: 20pt;
+  font-weight: bold; }
+
+.subtitle {
+  color: #292929;
+  font-size: 9pt;
+  font-weight: bold;
+  border-bottom: 1px solid #5a8fa6; }
+
 /*# sourceMappingURL=strategy.css.map */

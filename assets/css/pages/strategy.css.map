@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAEA,IAAK;EACH,gBAAgB,ECHJ,OAAO",
+"mappings": "AAEA,IAAK;EACH,gBAAgB,ECFJ,OAAO;;ADKrB,IAAK;EACH,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,MAAM;;AAGhB,MAAO;EACL,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;;AAGnB,SAAU;EACR,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,IAAI;EACjB,aAAa,EAAE,iBAAiB",
 "sources": ["../../scss/pages/strategy.scss","../../scss/_variables.scss"],
 "names": [],
 "file": "strategy.css"
