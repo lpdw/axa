@@ -1,7 +1,7 @@
 ## HTML/CSS Project
 
 <h1 align="center">
-	<img width="400" src="https://rawgit.com/lpdw/axa-GP5/master/temp/OJ91BD0.jpg" alt="EatDelivery">
+	<img width="250" src="https://rawgit.com/lpdw/axa-GP5/master/temp/OJ91BD0.jpg" alt="EatDelivery">
 	<br>
 	<br>
 </h1>
