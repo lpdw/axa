@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,SAAU;EACR,gBAAgB,EAAE,OAAO",
-"sources": ["../../scss/pages/strategy.scss"],
+"mappings": "AAEA,IAAK;EACH,gBAAgB,ECHJ,OAAO",
+"sources": ["../../scss/pages/strategy.scss","../../scss/_variables.scss"],
 "names": [],
 "file": "strategy.css"
 }
