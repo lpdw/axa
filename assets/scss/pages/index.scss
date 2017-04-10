@@ -1,1 +1,47 @@
+@import "variables";
 
+body{
+  background: #787878;
+  width: 1290px;
+
+  .header-nav{
+
+    height: 150px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .text-header p{
+      font-weight: bold;
+      font-size: 4.5em;
+    }
+
+  }
+  main{
+    width: 100%;
+  }
+
+  .main-page{
+    background: url('../../img/home/axa_hopwork_070.jpg') no-repeat;
+    background-size: contain;
+  }
+}
+
+
+
+@media (min-width: $breakpoint-mobile) {
+  .burger-menu{
+    background: url('../../img/common/Hamburger_menu.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+  }
+
+  .hidden-text-header{
+    display: none;
+  }
+
+}
