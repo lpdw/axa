@@ -3,7 +3,7 @@
   src: url("../../fonts/itc-avant-garde.otf"); }
 body {
   margin: auto;
-    font-family: 'ITCAvantGarde';
+  font-family: 'ITCAvantGarde';
   background-color: #f8f8f8;
   font-size: 14px; }
 
@@ -58,6 +58,10 @@ h2 {
 .Rapport p > span {
   font-weight: bold; }
 
+.listeDownload li > .hexagon {
+  float: right;
+  margin-left: 14px; }
+
 .listeDownload li {
   list-style: none;
   display: block;
@@ -65,19 +69,16 @@ h2 {
   background-color: #fff;
   margin-bottom: 3px;
   font-weight: bold; }
-
-.listeDownload li > span, .listeDownload li > input {
-  float: right; }
-
-.listeDownload li > span {
-  font-size: 12px;
-  line-height: 1.2; }
+  .listeDownload li > span,
+  .listeDownload li > input {
+    float: right; }
+  .listeDownload li > span {
+    font-size: 12px;
+    line-height: 1.2; }
 
 .btnSubmit .hexagon {
-    display: inline-block;
-    
-    margin-right: 12px
-  }
+  display: inline-block;
+  margin-right: 12px; }
 
 /*** Liste deroulant **/
 .deroulant:hover .sous-menu {
@@ -85,9 +86,11 @@ h2 {
 
 .sous-menu {
   display: block;
-  position: relaive;
-  margin-top: 2px;
-  background-color: #f8f8f8 !important; }
+  position: relative;
+  margin-top: 13px;
+  margin-bottom: -13px;
+  margin-right: -13px;
+  background-color: #f8f8f8; }
 
 .deroulant .sous-menu li:after {
   content: ""; }
@@ -100,7 +103,17 @@ h2 {
 .deroulant .sous-menu li > a {
   color: white; }
 
+.deroulant .sous-menu li > .hexagon-little {
+  margin-left: 18px;
+  margin-right: 3px;
+  float: right; }
+
 /*****/
+.Rapport form:after {
+  clear: both;
+  content: "";
+  display: table; }
+
 .Rapport button {
   color: #e79655;
   font-size: 14px;
@@ -126,43 +139,32 @@ h2 {
 
 .Publication h2 {
   border-bottom: 1px solid #e79655;
-  font-weight: bold;
-
-}
+  font-weight: bold; }
 
 .Publication li {
   display: flex;
-  list-style: none;
-
-   }
+  list-style: none; }
 
 .Publication h4 {
   font-weight: bold;
   color: #e79655;
-  margin-bottom: 7px;}
+  margin-bottom: 7px; }
 
 .Publication li > span {
   font-size: 12px;
   line-height: 1.2;
   font-weight: lighter;
-  float: right;
-}
+  float: right; }
 
-
-.Publication li{
+.Publication li {
   display: flex;
-  list-style: none;
-}
-
+  list-style: none; }
 
 .Publication div {
-  display: inline-block;
-}
+  display: inline-block; }
 
 .Publication button {
-  display: block;
-}
-
+  display: block; }
 
 /** AutresDocs */
 .AutresDocs {
@@ -180,41 +182,29 @@ h2 {
   padding: 12px;
   background-color: #fff;
   margin-bottom: 2px;
-  font-weight: bold;
- }
+  font-weight: bold; }
 
 .AutresDocs li > span {
   font-size: 12px;
   line-height: 1.2;
-  float: right;
-
- }
+  float: right; }
 
 .AutresDocs li > span, .AutresDocs li > a {
-  float: right;
-
-}
+  float: right; }
 
 .AutresDocs .hexagon, .btnSubmit .hexagon {
+  background: url(../../img/document/arrows.png) no-repeat;
+  margin-left: 12px;
+  background-size: 9px;
+  background-position: 50% 50%; }
 
-   background: url(../../img/document/arrows.png) no-repeat;
-   margin-left: 12px;
-   background-position: 50% 50%;
-}
-
-/** polygone **/
-
+/**  Grand hexagon **/
 .hexagon {
   position: relative;
   width: 23px;
   height: 13.28px;
   border-left: solid 1px #e79655;
-  border-right: solid 1px #e79655;
-}
-
-.hexagon span {
-
-}
+  border-right: solid 1px #e79655; }
 
 .hexagon:before,
 .hexagon:after {
@@ -227,26 +217,54 @@ h2 {
   -ms-transform: scaleY(0.5774) rotate(-45deg);
   transform: scaleY(0.5774) rotate(-45deg);
   background-color: inherit;
-  left: 2.3683px;
-}
+  left: 2.3683px; }
 
 .hexagon:before {
   top: -8.1317px;
   border-top: solid 1.4142px #e79655;
-  border-right: solid 1.4142px #e79655;
-}
+  border-right: solid 1.4142px #e79655; }
 
 .hexagon:after {
   bottom: -8.1317px;
   border-bottom: solid 1.4142px #e79655;
-  border-left: solid 1.4142px #e79655;
-}
-
+  border-left: solid 1.4142px #e79655; }
 
 .box-check {
-  display: none
-}
+  display: none; }
+
+/** Petit hexagon **/
+.hexagon-little {
+  position: relative;
+  width: 16px;
+  height: 9.24px;
+  background-color: #f8f8f8;
+  border-left: solid 1px #e79655;
+  border-right: solid 1px #e79655; }
+
+.hexagon-little:before,
+.hexagon-little:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 11.31px;
+  height: 11.31px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 1.3431px; }
+
+.hexagon-little:before {
+  top: -5.6569px;
+  border-top: solid 1.4142px #e79655;
+  border-right: solid 1.4142px #e79655; }
+
+.hexagon-little:after {
+  bottom: -5.6569px;
+  border-bottom: solid 1.4142px #e79655;
+  border-left: solid 1.4142px #e79655; }
 
 /* Mode responsive **/
+/*# sourceMappingURL=document.css.map */
 
 /*# sourceMappingURL=document.css.map */
