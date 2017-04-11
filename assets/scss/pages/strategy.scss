@@ -1,7 +1,5 @@
-@import "variables";
-
 html, body {
-  background-color: $strategy-bg;
+  background-color: #f8f8f8;
 }
 
 main {
@@ -10,13 +8,35 @@ main {
 
   section div {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    text-align: center;
 
     figure {
+      line-height: 1.5em;
+
       figcaption {
         color: #636363;
       }
     }
+  }
 
+  section div.infos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+
+    p {
+      margin-left: 1em;
+
+      span {
+        color: #636363;
+      }
+    }
   }
 
 }
@@ -33,7 +53,6 @@ main {
   font-size: 9pt;
   font-weight: bold;
   border-bottom: 1px solid #5a8fa6;
-  margin-top: 2em;
 }
 
 
@@ -46,7 +65,6 @@ main {
 .pilliers button:focus {
   outline: none;
 }
-
 
 /**************************************************************************\
                   MEDIA QUERIES
@@ -66,7 +84,24 @@ main {
         margin: 0.5em;
         text-align: center;
         font-size: 10pt;
-        line-height: 1.5em;
+        line-height: 1.3em;
+      }
+    }
+
+    section div.infos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      p {
+        font-size: 10pt;
+        margin-left: 1em;
+
+        span {
+          color: #636363;
+        }
       }
     }
   }

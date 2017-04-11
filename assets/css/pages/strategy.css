@@ -5,9 +5,26 @@ main {
   max-width: 960px;
   margin: 0 auto; }
   main section div {
-    display: flex; }
-    main section div figure figcaption {
-      color: #636363; }
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    text-align: center; }
+    main section div figure {
+      line-height: 1.5em; }
+      main section div figure figcaption {
+        color: #636363; }
+  main section div.infos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: no-wrap; }
+    main section div.infos p {
+      margin-left: 1em; }
+      main section div.infos p span {
+        color: #636363; }
 
 .title {
   text-align: center;
@@ -18,8 +35,7 @@ main {
   color: #292929;
   font-size: 9pt;
   font-weight: bold;
-  border-bottom: 1px solid #5a8fa6;
-  margin-top: 2em; }
+  border-bottom: 1px solid #5a8fa6; }
 
 .pilliers button {
   background: inherit;
@@ -43,6 +59,17 @@ main {
       margin: 0.5em;
       text-align: center;
       font-size: 10pt;
-      line-height: 1.5em; } }
+      line-height: 1.3em; }
+  main section div.infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    main section div.infos p {
+      font-size: 10pt;
+      margin-left: 1em; }
+      main section div.infos p span {
+        color: #636363; } }
 
 /*# sourceMappingURL=strategy.css.map */
