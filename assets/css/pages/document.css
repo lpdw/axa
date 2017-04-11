@@ -1,0 +1,252 @@
+@font-face {
+  font-family: 'ITCAvantGarde';
+  src: url("../../fonts/itc-avant-garde.otf"); }
+body {
+  margin: auto;
+    font-family: 'ITCAvantGarde';
+  background-color: #f8f8f8;
+  font-size: 14px; }
+
+/** HEADER **/
+header {
+  margin-top: 12px;
+  display: flex;
+  display: block; }
+
+ul {
+  margin-left: -41px; }
+
+.logo {
+  display: block; }
+
+.regards {
+  position: relative;
+  font-weight: 700;
+  float: right;
+  width: 73px;
+  margin-top: -45px;
+  line-height: 0.882;
+  text-align: center; }
+
+.regards span {
+  color: #e79655; }
+
+/** MAIN **/
+main {
+  margin: auto;
+  width: 80%; }
+
+h1 {
+  font-weight: bold;
+  /*font-size: 17.774px;*/ }
+
+h2 {
+  /*font-size: 16px;*/ }
+
+/** SECTION **/
+/* Rapport */
+.Rapport {
+  display: block; }
+
+.Rapport h2 {
+  border-bottom: 1px solid #e79655;
+  font-weight: bold; }
+
+.Rapport p {
+  font-size: 14px; }
+
+.Rapport p > span {
+  font-weight: bold; }
+
+.listeDownload li {
+  list-style: none;
+  display: block;
+  padding: 12px;
+  background-color: #fff;
+  margin-bottom: 3px;
+  font-weight: bold; }
+
+.listeDownload li > span, .listeDownload li > input {
+  float: right; }
+
+.listeDownload li > span {
+  font-size: 12px;
+  line-height: 1.2; }
+
+.btnSubmit .hexagon {
+    display: inline-block;
+    
+    margin-right: 12px
+  }
+
+/*** Liste deroulant **/
+.deroulant:hover .sous-menu {
+  display: block; }
+
+.sous-menu {
+  display: block;
+  position: relaive;
+  margin-top: 2px;
+  background-color: #f8f8f8 !important; }
+
+.deroulant .sous-menu li:after {
+  content: ""; }
+
+.sous-menu li {
+  display: block;
+  margin-bottom: 1px;
+  background-color: #f8f8f8; }
+
+.deroulant .sous-menu li > a {
+  color: white; }
+
+/*****/
+.Rapport button {
+  color: #e79655;
+  font-size: 14px;
+  font-weight: bold;
+  border-width: 1px;
+  font-family: 'ITCAvantGarde';
+  border-color: #e79655;
+  border-style: solid;
+  background-color: #f8f8f8;
+  float: right;
+  width: 210px;
+  height: 48px;
+  margin-bottom: 12px; }
+
+.Rapport button > span {
+  font-weight: lighter; }
+
+/*** Publication */
+.Publication {
+  clear: both;
+  display: block;
+  margin-top: 10%; }
+
+.Publication h2 {
+  border-bottom: 1px solid #e79655;
+  font-weight: bold;
+
+}
+
+.Publication li {
+  display: flex;
+  list-style: none;
+
+   }
+
+.Publication h4 {
+  font-weight: bold;
+  color: #e79655;
+  margin-bottom: 7px;}
+
+.Publication li > span {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: lighter;
+  float: right;
+}
+
+
+.Publication li{
+  display: flex;
+  list-style: none;
+}
+
+
+.Publication div {
+  display: inline-block;
+}
+
+.Publication button {
+  display: block;
+}
+
+
+/** AutresDocs */
+.AutresDocs {
+  clear: both;
+  display: block;
+  margin-top: 5%; }
+
+.AutresDocs h2 {
+  border-bottom: 1px solid #e79655;
+  font-weight: bold; }
+
+.AutresDocs li {
+  list-style: none;
+  display: block;
+  padding: 12px;
+  background-color: #fff;
+  margin-bottom: 2px;
+  font-weight: bold;
+ }
+
+.AutresDocs li > span {
+  font-size: 12px;
+  line-height: 1.2;
+  float: right;
+
+ }
+
+.AutresDocs li > span, .AutresDocs li > a {
+  float: right;
+
+}
+
+.AutresDocs .hexagon, .btnSubmit .hexagon {
+
+   background: url(../../img/document/arrows.png) no-repeat;
+   margin-left: 12px;
+   background-position: 50% 50%;
+}
+
+/** polygone **/
+
+.hexagon {
+  position: relative;
+  width: 23px;
+  height: 13.28px;
+  border-left: solid 1px #e79655;
+  border-right: solid 1px #e79655;
+}
+
+.hexagon span {
+
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 16.26px;
+  height: 16.26px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 2.3683px;
+}
+
+.hexagon:before {
+  top: -8.1317px;
+  border-top: solid 1.4142px #e79655;
+  border-right: solid 1.4142px #e79655;
+}
+
+.hexagon:after {
+  bottom: -8.1317px;
+  border-bottom: solid 1.4142px #e79655;
+  border-left: solid 1.4142px #e79655;
+}
+
+
+.box-check {
+  display: none
+}
+
+/* Mode responsive **/
+
+/*# sourceMappingURL=document.css.map */
