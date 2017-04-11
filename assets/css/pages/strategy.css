@@ -1,12 +1,16 @@
-body {
+html, body {
   background-color: #f8f8f8; }
 
 main {
   max-width: 960px;
-  margin: 0 auto;
-  padding: 1em; }
+  margin: 0 auto; }
+  main section div {
+    display: flex; }
+    main section div figure figcaption {
+      color: #636363; }
 
 .title {
+  text-align: center;
   font-size: 20pt;
   font-weight: bold; }
 
@@ -17,18 +21,6 @@ main {
   border-bottom: 1px solid #5a8fa6;
   margin-top: 2em; }
 
-.subtitle-icon {
-  display: flex;
-  align-items: center;
-  margin: 0 0.5em; }
-
-.pilliers, .priority {
-  display: flex;
-  justify-content: space-between;
-  margin: 1em;
-  align-items: center;
-  flex-direction: row; }
-
 .pilliers button {
   background: inherit;
   border: none;
@@ -37,11 +29,20 @@ main {
 .pilliers button:focus {
   outline: none; }
 
-.priority {
-  color: #636363; }
-
 /**************************************************************************\
                   MEDIA QUERIES
 \**************************************************************************/
+@media screen and (max-width: 580px) {
+  main section div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    main section div figure {
+      margin: 0.5em;
+      text-align: center;
+      font-size: 10pt;
+      line-height: 1.5em; } }
 
 /*# sourceMappingURL=strategy.css.map */

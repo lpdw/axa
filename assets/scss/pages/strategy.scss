@@ -1,16 +1,29 @@
 @import "variables";
 
-body {
+html, body {
   background-color: $strategy-bg;
 }
 
 main {
   max-width: 960px;
   margin: 0 auto;
-  padding: 1em;
+
+  section div {
+    display: flex;
+
+    figure {
+      figcaption {
+        color: #636363;
+      }
+    }
+
+  }
+
 }
 
+
 .title {
+  text-align: center;
   font-size: 20pt;
   font-weight: bold;
 }
@@ -23,19 +36,6 @@ main {
   margin-top: 2em;
 }
 
-.subtitle-icon {
-  display: flex;
-  align-items: center;
-  margin: 0 0.5em;
-}
-
-.pilliers, .priority {
-  display: flex;
-  justify-content: space-between;
-  margin: 1em;
-  align-items: center;
-  flex-direction: row;
-}
 
 .pilliers button {
   background: inherit;
@@ -47,17 +47,29 @@ main {
   outline: none;
 }
 
-.priority {
-  color: #636363;
-}
-
 
 /**************************************************************************\
                   MEDIA QUERIES
 \**************************************************************************/
-
 @media screen and (max-width : 580px) {
-  
+  main {
+
+    section div {
+
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      figure {
+        margin: 0.5em;
+        text-align: center;
+        font-size: 10pt;
+        line-height: 1.5em;
+      }
+    }
+  }
 }
 
 @media screen and (min-width : 581px) and (max-width : 700px) {
