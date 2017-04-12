@@ -205,6 +205,10 @@ h2 {
   margin-bottom: 2px;
   font-weight: bold; }
 
+a {
+  color: black;
+  text-decoration: none; }
+
 .AutresDocs li > span,
 .AutresDocs li > a > span {
   font-size: 12px;
@@ -212,33 +216,31 @@ h2 {
   float: right;
   margin-right: 12px; }
 
-.AutresDocs li > a > span {
+.AutresDocs li > a > span.fleche {
   margin-right: -33px; }
 
 .AutresDocs .hexagon {
-  background: url() no-repeat;
   margin-left: 12px;
-  background-size: 9px;
-  background-position: 50% 50%; }
-
-.AutresDocs .hexagon {
+  background-position: 50% 50%;
   float: right;
   margin-top: -11px;
-  display: block; }
+  display: inline-block; }
 
 .AutresDocs a > ul > li > a > span.fleche {
   margin-left: 70px;
   margin-top: -33px;
   display: block; }
 
+.titreDoc {
+  display: block;
+  width: 70%; }
+
 /* Mode responsive*/
 @media screen and (max-width: 580px) {
   /** RAPPORT PERSONNALISE **/
-  .listeDownload li {
-    padding: 30px; }
-
   .listeDownload li > label {
-    display: block; }
+    display: inline-block;
+    width: 70%; }
 
   .listeDownload li > label > svg.reduire {
     margin-right: 20px; }
@@ -248,7 +250,10 @@ h2 {
 
   .listeDownload li > .hexagon {
     display: block;
-    margin-right: -2px; }
+    margin-right: -17px; }
+
+  input {
+    display: none; }
 
   .sous-menu {
     margin-top: 30px;
@@ -274,12 +279,7 @@ h2 {
   .Publication .download > .hexagon {
     margin-left: 26px; }
 
-  /*** AUTRES DOCS **/
-  .AutresDocs li {
-    padding: 30px; }
-
-  .AutresDocs .hexagon {
-    display: block; } }
+  /*** AUTRES DOCS **/ }
 /*# sourceMappingURL=document.css.map */
 
 /*# sourceMappingURL=document.css.map */
