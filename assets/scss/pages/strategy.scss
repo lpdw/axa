@@ -1,10 +1,18 @@
 html, body {
   background-color: #f8f8f8;
+  font-family: Verdana, sans-serif;
 }
 
 main {
   max-width: 960px;
   margin: 0 auto;
+
+  div.has-big-hexa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 
   .infos {
     display: flex;
@@ -12,8 +20,10 @@ main {
     justify-content: flex-start;
     cursor: pointer;
 
+    margin-left: 10px;
     p {
       font-size: 16.5px;
+      margin-left: 10px;
 
       span {
         color: #636363;
@@ -89,7 +99,7 @@ main {
 }
 
 .pillier svg, .priority svg {
-  width: 50%;
+  width: 80%;
 }
 
 .priority .priority-1 {
@@ -104,7 +114,7 @@ main {
   fill: #fcc04b;
 }
 
-.polygone {
+.pillier .pillier-1, .pillier .pillier-2 {
   fill: #5a8fa6;
   stroke: #fff;
   stroke-width: 1px;
@@ -117,15 +127,26 @@ figure {
   align-items: center;
   position: relative;
 }
+
 figure figcaption {
   position: absolute;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   max-width: 50%;
-  line-height: 20px;
+  line-height: 25px;
+  text-align: center;
   color: #fff;
-  font-size: 12px;
+  font-size: 17px;
+}
+
+.has-big-hexa div {
+  max-width: 300px;
+}
+
+.has-big-hexa div p:last-child {
+  color: #727272;
+  line-height: 22px;
 }
 
 /**************************************************************************\
@@ -139,18 +160,10 @@ figure figcaption {
 
   main {
 
-    section {
-      align-items: center;
-      justify-content: space-around;
-      flex-direction: row;
-      flex-wrap: wrap;
-
-      figure {
-        margin: 0.5em;
-        text-align: center;
-        font-size: 10px;
-        line-height: 1.3em;
-      }
+    div.has-big-hexa {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
     }
 
     .infos {
@@ -160,13 +173,14 @@ figure figcaption {
       flex-direction: row;
       flex-wrap: wrap;
 
-      // p {
-        font-size: 16.5px;
+      p {
+        font-size: 14px;
+        text-align: center;
 
         span {
           color: #636363;
         }
-      // }
+      }
 
     }
   }
@@ -184,6 +198,31 @@ figure figcaption {
   .svg-container-pilliers p {
     color: #fff;
     font-size: 10px;
+  }
+
+  .pillier svg, .priority svg {
+    width: 100%;
+  }
+
+  figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  figure figcaption {
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    line-height: 20px;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  .has-big-hexa div {
+    max-width: 100%;
   }
 }
 

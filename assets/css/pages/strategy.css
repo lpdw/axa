@@ -1,16 +1,24 @@
 html, body {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  font-family: Verdana, sans-serif; }
 
 main {
   max-width: 960px;
   margin: 0 auto; }
+  main div.has-big-hexa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; }
   main .infos {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-left: 10px; }
     main .infos p {
-      font-size: 16.5px; }
+      font-size: 16.5px;
+      margin-left: 10px; }
       main .infos p span {
         color: #636363; }
 
@@ -70,7 +78,7 @@ main {
   stroke-width: 10; }
 
 .pillier svg, .priority svg {
-  width: 50%; }
+  width: 80%; }
 
 .priority .priority-1 {
   fill: #98c67f; }
@@ -81,7 +89,7 @@ main {
 .priority .priority-3 {
   fill: #fcc04b; }
 
-.polygone {
+.pillier .pillier-1, .pillier .pillier-2 {
   fill: #5a8fa6;
   stroke: #fff;
   stroke-width: 1px;
@@ -99,9 +107,17 @@ figure figcaption {
   display: flex;
   flex-wrap: wrap;
   max-width: 50%;
-  line-height: 20px;
+  line-height: 25px;
+  text-align: center;
   color: #fff;
-  font-size: 12px; }
+  font-size: 17px; }
+
+.has-big-hexa div {
+  max-width: 300px; }
+
+.has-big-hexa div p:last-child {
+  color: #727272;
+  line-height: 22px; }
 
 /**************************************************************************\
                   MEDIA QUERIES
@@ -110,25 +126,21 @@ figure figcaption {
   .title {
     font-size: 20px; }
 
-  main section {
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    main section figure {
-      margin: 0.5em;
-      text-align: center;
-      font-size: 10px;
-      line-height: 1.3em; }
+  main div.has-big-hexa {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
   main .infos {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 16.5px; }
-    main .infos span {
-      color: #636363; }
+    flex-wrap: wrap; }
+    main .infos p {
+      font-size: 14px;
+      text-align: center; }
+      main .infos p span {
+        color: #636363; }
 
   .svg-container-pilliers {
     justify-content: center; }
@@ -140,6 +152,28 @@ figure figcaption {
 
   .svg-container-pilliers p {
     color: #fff;
-    font-size: 10px; } }
+    font-size: 10px; }
+
+  .pillier svg, .priority svg {
+    width: 100%; }
+
+  figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+
+  figure figcaption {
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    line-height: 20px;
+    color: #fff;
+    font-size: 15px; }
+
+  .has-big-hexa div {
+    max-width: 100%; } }
 
 /*# sourceMappingURL=strategy.css.map */
