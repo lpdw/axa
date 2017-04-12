@@ -65,17 +65,16 @@ h2 {
   margin-top: -12px;
   float: right;
 }
+.listeDownload li > label {
 
-.listeDownload li > label svg {
+}
+.listeDownload li > label svg.reduire {
     margin-right: 40px;
 }
 
-.listeDownload li > .hexagon > svg {
-    margin-right: 40px;
-}
 
 .listeDownload li > .hexagon > .check {
-  border: 1px solid red;
+  margin-top: 12px;
 
 }
 
@@ -97,11 +96,40 @@ h2 {
     line-height: 1.2;
   }
 }
+.Rapport button {
+  color: #e79655;
+  font-size: 14px;
+  font-weight: bold;
+  border-width: 1px;
+  font-family: 'ITCAvantGarde';
+  border-color: #e79655;
+  border-style: solid;
+  background-color: #f8f8f8;
+  float: right;
+  width: 210px;
+  height: 48px;
+  margin-bottom: 12px; }
 
-.btnSubmit .hexagon {
-    display: inline-block;
-    margin-right: 12px
-  }
+.Rapport button >  svg {
+  float: left;
+  display: inline-block;
+  margin-left: 13px;
+  margin-top: 2px;
+}
+
+.Rapport button > span {
+  font-weight: lighter;
+  display: inline-block;
+  margin-top: 14px;
+
+}
+
+
+.Rapport button > span > svg{
+  margin-left: 12px;
+  margin-left: -47px;
+}
+
 
 /*** Liste deroulant **/
 .deroulant:hover .sous-menu {
@@ -141,37 +169,7 @@ h2 {
   }
 }
 
-.Rapport button {
-  color: #e79655;
-  font-size: 14px;
-  font-weight: bold;
-  border-width: 1px;
-  font-family: 'ITCAvantGarde';
-  border-color: #e79655;
-  border-style: solid;
-  background-color: #f8f8f8;
-  float: right;
-  width: 210px;
-  height: 48px;
-  margin-bottom: 12px; }
 
-.Rapport button > span {
-  font-weight: lighter;
-}
-
-.Rapport button > span {
-  font-weight: lighter;
-}
-
-.Rapport button > span > svg {
-  float: left;
-  margin-left: -34px;
-  margin-top: 12px;
-}
-
-.Rapport button > span > svg.hexagon {
-  float: left;
-}
 /*** Publication */
 .Publication {
   clear: both;
@@ -185,9 +183,10 @@ h2 {
 }
 
 .Publication li {
-  display: inline-block;;
+  display: inline-flex;;
   list-style: none;
-  width: 50%;
+  width: 48%;
+
    }
 
 .Publication h4 {
@@ -203,20 +202,24 @@ h2 {
 }
 
 
-.Publication li{
-  display: flex;
-  list-style: none;
-}
-
-
 .Publication div {
-  display: inline-block;
-}
-
-.Publication button {
   display: block;
 }
 
+.Publication .download {
+  display: block;
+
+}
+
+.Publication .download > .hexagon{
+  margin-left: 12px;
+}
+
+.Publication  li > div.descriptionIMG > a > span {
+  margin-left: 23px;
+  margin-top: -33px;
+  display: block;
+}
 
 /** AutresDocs */
 .AutresDocs {
@@ -237,31 +240,103 @@ h2 {
   font-weight: bold;
  }
 
-.AutresDocs li > span {
+
+.AutresDocs li > span,
+.AutresDocs li > a > span{
   font-size: 12px;
   line-height: 1.2;
   float: right;
-
- }
-
-.AutresDocs li > span, .AutresDocs li > a {
-  float: right;
+  margin-right: 12px;
 
 }
 
-.AutresDocs .hexagon, .btnSubmit .hexagon {
+.AutresDocs li > a > span{
+    margin-right: -33px;
+}
+
+.AutresDocs .hexagon{
    background: url() no-repeat;
    margin-left: 12px;
    background-size: 9px;
    background-position: 50% 50%;
 }
-
-.AutresDocs .hexagon span {
-
+.AutresDocs .hexagon  {
+  float: right;
+  margin-top: -11px;
+  display: block;
+}
+.AutresDocs a > ul > li  > a > span.fleche {
+  margin-left: 70px;
+  margin-top: -33px;
+  display: block;
 }
 
 
 
-/* Mode responsive **/
 
+/* Mode responsive*/
+@media screen and (max-width : 580px) {
+
+  /** RAPPORT PERSONNALISE **/
+
+  .listeDownload li {
+    padding: 30px;
+
+  }
+
+  .listeDownload li > label {
+    display: block;
+  }
+  .listeDownload li > label > svg.reduire {
+      margin-right: 20px;
+    }
+
+  .listeDownload li > a {
+    display: flex;
+
+  }
+
+  .listeDownload li >.hexagon{
+    display: block;
+
+    margin-right: -2px;
+  }
+
+  .sous-menu {
+    margin-top: 30px;
+    margin-bottom: -31px;
+    margin-right: -31px;
+  }
+  /** PUBLICATION **/
+  .Publication li {
+    display: block;
+    width: 100%;
+    margin-bottom:57px;
+    text-align: center;
+  }
+  .Publication img {
+    display: block;
+    width: 30%;
+  }
+  .Publication div {
+    float: right;
+    width: 66%;
+    margin-top: -73px;
+
+  }
+  .Publication .download > .hexagon {
+      margin-left: 26px;
+  }
+
+  /*** AUTRES DOCS **/
+  .AutresDocs li {
+    padding: 30px;
+  }
+
+  .AutresDocs .hexagon{
+    display:block;
+
+  }
+
+}
 /*# sourceMappingURL=document.css.map */
