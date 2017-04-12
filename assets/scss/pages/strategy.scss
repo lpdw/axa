@@ -12,10 +12,6 @@ main {
     justify-content: space-around;
     text-align: center;
 
-    img {
-      margin-top: 0.3em;
-    }
-
     figure {
       line-height: 1.5em;
 
@@ -31,6 +27,7 @@ main {
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
+    cursor: pointer;
     p {
       margin-left: 1em;
 
@@ -42,24 +39,31 @@ main {
 
 }
 
-
 .title {
   text-align: center;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
 }
 
 .subtitle {
   color: #292929;
-  font-size: 9pt;
+  font-size: 15px;
   font-weight: bold;
   border-bottom: 1px solid #5a8fa6;
 }
 
+.hexagon.hexagon-pillier-1 {
+  background: #5a8fa6;
+}
 /**************************************************************************\
                   MEDIA QUERIES
 \**************************************************************************/
 @media screen and (max-width : 580px) {
+
+  .title {
+    font-size: 20px;
+  }
+
   main {
 
     section div {
@@ -73,7 +77,7 @@ main {
       figure {
         margin: 0.5em;
         text-align: center;
-        font-size: 10pt;
+        font-size: 10px;
         line-height: 1.3em;
       }
     }
@@ -86,7 +90,7 @@ main {
       flex-wrap: wrap;
 
       p {
-        font-size: 10pt;
+        font-size: 5px;
         margin-left: 1em;
 
         span {
@@ -97,29 +101,33 @@ main {
   }
 }
 
+// @media screen and (min-width : 581px) and (max-width : 700px) {
+//
+// }
+//
+// @media screen and (min-width : 701px) and (max-width : 820px) {
+//
+// }
+//
+// @media screen and (min-width : 821px) and (max-width : 940px) {
+//
+// }
+//
+// @media screen and (min-width : 941px) and (max-width : 1060px) {
+//
+// }
+//
+// @media screen and (min-width : 1061px) and (max-width : 1180px) {
+//
+// }
+//
+// @media screen and (min-width : 1181px) {
+//
+// }
 
-
-
-@media screen and (min-width : 581px) and (max-width : 700px) {
-
-}
-
-@media screen and (min-width : 701px) and (max-width : 820px) {
-
-}
-
-@media screen and (min-width : 821px) and (max-width : 940px) {
-
-}
-
-@media screen and (min-width : 941px) and (max-width : 1060px) {
-
-}
-
-@media screen and (min-width : 1061px) and (max-width : 1180px) {
-
-}
-
-@media screen and (min-width : 1181px) {
-
+.polygone {
+  fill: #5a8fa6;
+  stroke: #fff;
+  stroke-width: 1px;
+  fill-rule: evenodd;
 }
