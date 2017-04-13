@@ -1,69 +1,251 @@
-/*
-Error: Invalid CSS after "...egy-bg: #f8f8f8": expected "{", was ";"
-        on line 3 of /Users/IntelliJ/Documents/HTML_CSS/TP_AXA/axa-GP5/assets/scss/_variables.scss
-        from line 1 of assets/scss/pages/index.scss
+@font-face {
+  font-family: 'ITCAvantGarde';
+  src: url("../../fonts/itc-avant-garde.otf"); }
+body {
+  margin: auto;
+  font-family: 'ITCAvantGarde';
+  background-color: #f8f8f8;
+  font-size: 14px; }
 
-1: <<<<<<< HEAD
-2: // strategy
-3: $strategy-bg: #f8f8f8;
-4: $breakpoint-mobile: 640px;
-5: $yellow: #ffff00;
-6: =======
-7: >>>>>>> b1de3a0bde8cdf2b2b5c388e06bcb91c2dd5d2b1
+/** HEADER **/
+header {
+  background-color: #fff; }
 
-Backtrace:
-/Users/IntelliJ/Documents/HTML_CSS/TP_AXA/axa-GP5/assets/scss/_variables.scss:3
-assets/scss/pages/index.scss:1
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:674:in `block_contents'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...egy-bg: #f8f8f8\": expected \"{\", was \";\"\A         on line 3 of /Users/IntelliJ/Documents/HTML_CSS/TP_AXA/axa-GP5/assets/scss/_variables.scss\A         from line 1 of assets/scss/pages/index.scss\A \A 1: <<<<<<< HEAD\A 2: // strategy\A 3: $strategy-bg: #f8f8f8;\A 4: $breakpoint-mobile: 640px;\A 5: $yellow: #ffff00;\A 6: =======\A 7: >>>>>>> b1de3a0bde8cdf2b2b5c388e06bcb91c2dd5d2b1"; }
+ul {
+  margin-left: -41px; }
+
+/*** BARRE D'INFO **/
+.barInfo {
+  background-color: #0d2e86;
+  display: block;
+  padding: 10px;
+  color: white; }
+  .barInfo p {
+    width: 80%; }
+  .barInfo .closeButton {
+    display: block;
+    right: 10px;
+    margin-left: 20px;
+    margin-top: 9px;
+    transform: translateY(-50%);
+    width: 33px;
+    float: right; }
+    .barInfo .closeButton .cercle {
+      position: absolute;
+      margin-left: 45px;
+      margin-top: -45px; }
+    .barInfo .closeButton .croix {
+      left: 64px;
+      position: absolute;
+      top: -27%;
+      transform: translate(34%, -137%); }
+    .barInfo .closeButton input {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+    .barInfo .closeButton:after {
+      content: "";
+      display: table;
+      clear: both; }
+
+.menu {
+  padding: 10px;
+  display: flex; }
+
+nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 27px;
+  display: inline-block; }
+
+/** MENU **/
+.logo {
+  display: block;
+  width: 60%;
+  margin-left: 22%;
+  margin-right: 8%; }
+
+.regards {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 46px;
+  color: black;
+  width: 28%;
+  text-align: center; }
+
+.regards span {
+  color: #e79655; }
+
+/** BURGER **/
+.menu-toggler {
+  display: none; }
+
+.menu-toggler__label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  bottom: 0;
+  width: 44px;
+  height: 100%; }
+
+.menu-toggler__label:hover,
+.menu-toggler__label:focus,
+.menu-toggler__label:active {
+  cursor: pointer; }
+
+.menu-toggler__label__text {
+  position: absolute;
+  text-indent: -9999px; }
+
+.menu-toggler__label__visual span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: black;
+  transition: transform .5s, top .5s, bottom .5s, opacity .2s;
+  opacity: 1; }
+
+.menu-toggler__label__visual span:nth-child(1) {
+  top: 5px;
+  margin-bottom: 3px; }
+
+.menu-toggler__label__visual span:nth-child(2) {
+  top: 50%;
+  margin-top: -4px; }
+
+.menu-toggler__label__visual span:nth-child(3) {
+  bottom: 5px;
+  margin-bottom: 3px; }
+
+.menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 19px; }
+
+.menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual span:nth-child(2) {
+  opacity: 0; }
+
+.menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 19px; }
+
+.main-menu {
+  position: absolute;
+  list-style-type: none;
+  top: 44px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding-left: 0;
+  display: none; }
+
+.menu-toggler:checked ~ .main-menu {
+  display: block; }
+
+.main-menu li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #fff; }
+
+.main-menu a {
+  display: block;
+  line-height: 44px;
+  padding: 0 .7em; }
+
+.main-menu a,
+.main-menu a:visited,
+.main-menu a:hover,
+.main-menu a:focus,
+.main-menu a:active {
+  text-decoration: none;
+  color: #fff; }
+
+.main-menu a,
+.main-menu a:visited {
+  background-color: #0d2e86; }
+
+.main-menu a:hover,
+.main-menu a:focus,
+.main-menu a:active {
+  background-color: #17a0b5; }
+
+/** CONTENU **/
+#bg {
+  position: relative;
+  background-image: url("../../img/home/axa_hopwork_070.jpg");
+  z-index: 1000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex; }
+  #bg .polygon {
+    list-style: none;
+    margin: auto;
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 13px; }
+    #bg .polygon > li {
+      position: absolute; }
+
+.contentSVG p {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  line-height: 1.333;
+  text-align: center;
+  -moz-transform: matrix(1.27782, 0, 0, 1.28057, 0, 0);
+  -webkit-transform: matrix(1.27782, 0, 0, 1.28057, 0, 0);
+  -ms-transform: matrix(1.27782, 0, 0, 1.28057, 0, 0);
+  position: absolute;
+  left: 30%;
+  top: 100px;
+  z-index: 34; }
+.contentSVG #polygone3 {
+  left: 50%; }
+
+.polygon li:nth-child(1) {
+  left: 1px;
+  top: 47px; }
+
+.polygon li:nth-child(2) {
+  left: 0;
+  top: 324px; }
+
+.polygon li:nth-child(3) {
+  left: 241px;
+  top: 186px; }
+
+.polygon li:nth-child(3) p {
+  left: 30%;
+  width: 136px; }
+
+.polygon li:nth-child(4) {
+  left: 240px;
+  top: 463px; }
+
+.polygon li svg:hover #polygone1 {
+  fill: blue; }
+
+.polygon li svg:hover #polygone2 {
+  fill: red; }
+
+.polygon li svg:hover #polygone3 {
+  fill: orange; }
+
+.polygon li svg:hover #polygone4 {
+  fill: green; }
+
+.polygon li svg:hover #polygone5 {
+  fill: pink; }
+
+.polygon li svg:hover #polygone6 {
+  fill: yellow; }
+
+/** RESPONSIVE **/
+
+/*# sourceMappingURL=index.css.map */

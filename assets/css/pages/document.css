@@ -20,7 +20,7 @@ ul {
   display: block; }
 
 .regards {
-  position: relative;
+  position: absolute;
   font-weight: 700;
   float: right;
   width: 73px;

@@ -1,132 +1,337 @@
 @import "variables";
 
-.header-nav {
+@font-face
+{
+  font-family: 'ITCAvantGarde';
+  src: url("../../fonts/itc-avant-garde.otf");
+}
+
+body
+{
+  margin: auto;
+  font-family: 'ITCAvantGarde';
+  background-color: #f8f8f8;
+  font-size: 14px;
+}
+
+/** HEADER **/
+header {
+    background-color: #fff;
+}
+
+ul
+{
+  margin-left: -41px;
+}
+/*** BARRE D'INFO **/
+
+.barInfo {
+  background-color: #0d2e86;
+  display: block;
+  padding: 10px;
+  color: white;
+
+  p {
+    width: 80%;
+  }
+
+  .closeButton {
+    display: block;
+    right: 10px;
+    margin-left: 20px;
+    margin-top: 9px;
+    transform: translateY(-50%);
+    width: 33px;
+    float: right;
+
+    .cercle {
+      position: absolute;
+      margin-left: 45px;
+      margin-top: -45px;
+    }
+    .croix {
+      left: 64px;
+      position: absolute;
+      top: -27%;
+      transform: translate(34%, -137%);
+      // left: 94%;
+      // position: absolute;
+      // top: 46%;
+      // transform: translate( -50%, -50% );
+    }
+
+    input {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate( -50%, -50% );
+    }
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
+
+
+ .menu {
+   padding: 10px;
+
+   display: flex;
+
+ }
+
+ nav {
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin-top: 27px;
+   display: inline-block;;
+ }
+
+/** MENU **/
+.logo
+{
+   display: block;
+   width: 60%;
+   margin-left: 22%;
+   margin-right: 8%;
+}
+
+.regards
+{
+  display: inline-block;
+  font-weight: 700;
+  font-size: 46px;
+  color: black;
+  width: 28%;
+  text-align: center;
+}
+
+.regards span {
+  color: #e79655;
+}
+
+
+/** BURGER **/
+
+.menu-toggler {
+    display: none;
+}
+
+.menu-toggler__label {
+    display: block;
     position: absolute;
-    z-index: 99999;
-    height: 80px;
     top: 0;
+    left: 10px;
+    bottom: 0;
+    width: 44px;
+    height: 100%;
+}
+
+.menu-toggler__label:hover,
+.menu-toggler__label:focus,
+.menu-toggler__label:active {
+    cursor: pointer
+}
+
+.menu-toggler__label__text {
+    position: absolute;
+    text-indent: -9999px;
+}
+
+.menu-toggler__label__visual span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 6px;
+
+    background-color: black;
+    transition: transform .5s, top .5s, bottom .5s, opacity .2s;
+    opacity: 1;
+}
+
+.menu-toggler__label__visual span:nth-child(1){
+    top: 5px;
+    margin-bottom: 3px;
+}
+
+.menu-toggler__label__visual span:nth-child(2) {
+    top: 50%;
+    margin-top: -4px;
+
+}
+
+.menu-toggler__label__visual span:nth-child(3) {
+    bottom: 5px;
+    margin-bottom: 3px;
+}
+
+.menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 19px;
+}
+
+.menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 19px;
+}
+
+
+
+
+.main-menu {
+    position: absolute;
+    list-style-type: none;
+    top: 44px;
     left: 0;
-    background-color: #ffffff;
-    min-width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    .img-header {
-        flex-grow: 2;
-    }
-
-    .text-header p {
-        text-align: center;
-        line-height: 0.1em;
-        font-weight: bold;
-        font-size: 1.5em;
-    }
+    right: 0;
+    margin: 0;
+    padding-left: 0;
+    display: none;
 }
 
-#bg {
-    position: relative;
-    background-image: url("../../img/home/axa_hopwork_070.jpg");
-    z-index: 1000;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+.menu-toggler:checked ~ .main-menu {
+    display: block;
+}
+
+.main-menu li {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.main-menu a {
+    display: block;
+    line-height: 44px;
+    padding: 0 .7em;
+}
+
+.main-menu a,
+.main-menu a:visited,
+.main-menu a:hover,
+.main-menu a:focus,
+.main-menu a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-menu a,
+.main-menu a:visited {
+    background-color: #0d2e86;
+}
+
+.main-menu a:hover,
+.main-menu a:focus,
+.main-menu a:active {
+    background-color: #17a0b5;
+}
+
+/** CONTENU **/
+#bg
+{
+  position: relative;
+  background-image: url("../../img/home/axa_hopwork_070.jpg");
+  z-index: 1000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+
+
+  .polygon {
+    list-style: none;
+    margin: auto;
+    position: absolute;
+    width: 400px;
+    left:50%;
+      transform: translate( -50%, -50% );
+    top: 13px;
+      >li {
+        position: absolute;
+
+    }
+  }
+}
+
+.contentSVG
+{
+  p {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.333;
+    text-align: center;
+    -moz-transform: matrix( 1.27781599054484,0,0,1.28057249974642,0,0);
+    -webkit-transform: matrix( 1.27781599054484,0,0,1.28057249974642,0,0);
+    -ms-transform: matrix( 1.27781599054484,0,0,1.28057249974642,0,0);
+    position: absolute;
+    left: 30%;
+    top: 100px;
+    z-index: 34;
+  }
+
+  #polygone3{
+    left: 50%;
+  }
 }
 
 
-
-.nav-polygon {
-    z-index: 999999;
-    top: 20%;
-    position: relative;
-    .ul-polygon {
-      position: relative;
-
-      li {
-          list-style-type: none;
-          display: inline-block;
-          position: absolute;
-          width: 551.9px;
-          &:nth-child(1){
-            left:0;
-            top: 0;
-          }
-          &:nth-child(2)
-          {
-            right: 0;
-            top: 237px;
-          }
-          &:nth-child(3)
-          {
-            left: 0;
-            top: 473.8px;
-          }
-          &:nth-child(4)
-          {
-            right: 0;
-            top: 711.8px;
-          }
-
-          svg {
-              fill: rgba(255,255,255,0.4);
-              color: transparent;
-              &:hover{
-                #polygone1{
-                  fill: blue;
-                }
-                #polygone2{
-                  fill: red;
-                }
-                #polygone3{
-                  fill: red;
-                }
-                #polygone4{
-                  fill: green;
-                }
-                #polygone5{
-                  fill: pink;
-                }
-                #polygone6{
-                  fill: yellow;
-                }
-              }
-          }
-      }
-    }
+.polygon li:nth-child(1)
+{
+  left: 1px;
+  top: 47px;
 
 }
-@media only screen and (max-width: $breakpoint-mobile), only screen and (max-device-width: $breakpoint-mobile) {
-    .burger-menu,
-    .header-nav .burger-menu {
-        flex-grow: 3;
-        background: url('../../img/common/Hamburger_menu.png') no-repeat cover;
-        width: 50px;
-        height: 50px;
-    }
+.polygon li:nth-child(2)
+{
+  left: 0;
+  top: 324px;
 
-    .nav-polygon ul li {
-        display: inline-block;
-    }
-
-    .nav-polygon ul li:nth-child(2) {
-        top: -20%;
-    }
-
-    .img-header {
-        width: 12em;
-        height: auto;
-    }
-
-    .hidden-text-header {
-        display: none;
-    }
-
-    .nav-polygon ul li:nth-child(6) {
-        display: none;
-    }
-
-    .nav-polygon ul li:nth-child(5) {
-        display: none;
-    }
 }
+.polygon li:nth-child(3)
+{
+  left: 241px;
+  top: 186px;
+}
+
+.polygon li:nth-child(3) p
+{
+  left: 30%;
+  width: 136px;
+
+}
+
+.polygon li:nth-child(4)
+{
+  left: 240px;
+  top: 463px;
+
+}
+
+.polygon li svg:hover #polygone1 {
+  fill: blue; }
+.polygon li svg:hover #polygone2 {
+  fill: red; }
+.polygon li svg:hover #polygone3 {
+  fill: orange; }
+.polygon li svg:hover #polygone4 {
+  fill: green; }
+.polygon li svg:hover #polygone5 {
+  fill: pink; }
+.polygon li svg:hover #polygone6 {
+  fill: yellow; }
+
+
+
+  /** RESPONSIVE **/
+
+  @media screen and (max-width : 580px) {
+    
+  }
