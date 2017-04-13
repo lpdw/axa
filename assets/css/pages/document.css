@@ -58,31 +58,30 @@ h2 {
 .Rapport p > span {
   font-weight: bold; }
 
-.listeDownload li > .hexagon {
-  margin-left: 15px;
-  margin-right: -4px;
-  margin-top: -12px;
-  float: right; }
+.listeDownload li label {
+  width: 70%;
+  position: absolute;
+  float: left; }
 
-.listeDownload li > label svg.reduire {
+.listeDownload li label > svg.reduire {
   margin-right: 40px; }
-
-.listeDownload li > .hexagon > .check {
-  margin-top: 12px; }
 
 .listeDownload li {
   list-style: none;
   display: block;
-  padding: 20px;
+  padding: 6px;
   background-color: #fff;
   margin-bottom: 3px;
   font-weight: bold; }
-  .listeDownload li > span,
-  .listeDownload li > input {
-    float: right; }
-  .listeDownload li > span {
+  .listeDownload li .taille {
+    float: right;
+    margin-top: 2px;
     font-size: 12px;
     line-height: 1.2; }
+  .listeDownload li:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .Rapport button {
   color: #e79655;
@@ -110,8 +109,7 @@ h2 {
   margin-top: 14px; }
 
 .Rapport button > span > svg {
-  margin-left: 12px;
-  margin-left: -47px; }
+  margin-left: -51px; }
 
 /*** Liste deroulant **/
 .deroulant:hover .sous-menu {
@@ -120,9 +118,10 @@ h2 {
 .sous-menu {
   display: block;
   position: relative;
-  margin-top: 13px;
-  margin-bottom: -21px;
-  margin-right: -21px;
+  margin-top: 63px;
+  margin-bottom: -12px;
+  margin-right: -7px;
+  margin-right: -7px;
   background-color: #f8f8f8; }
 
 .deroulant .sous-menu li:after {
@@ -132,6 +131,12 @@ h2 {
   display: block;
   margin-bottom: 1px;
   background-color: #f8f8f8; }
+
+.sous-menu li label {
+  margin-left: 51px;
+  width: 70%;
+  position: absolute;
+  float: left; }
 
 .deroulant .sous-menu li > a {
   color: white; }
@@ -146,6 +151,49 @@ h2 {
   clear: both;
   content: "";
   display: table; }
+
+.boutonSVG1 {
+  right: 10px;
+  margin-left: 20px;
+  margin-top: 9px;
+  transform: translateY(-50%);
+  width: 33px;
+  float: right; }
+  .boutonSVG1 .check {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .boutonSVG1 input {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .boutonSVG1:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.boutonSVG1-little {
+  margin-left: 20px;
+  margin-top: 9px;
+  transform: translateY(-50%);
+  float: right;
+  width: 27px; }
+  .boutonSVG1-little .check {
+    left: 40%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%); }
+  .boutonSVG1-little input {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .boutonSVG1-little:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 /*** Publication */
 .Publication {
@@ -200,47 +248,51 @@ h2 {
 .AutresDocs li {
   list-style: none;
   display: block;
-  padding: 20px;
+  padding: 10px;
   background-color: #fff;
   margin-bottom: 2px;
-  font-weight: bold; }
+  font-weight: bold;
+  position: relative; }
+  .AutresDocs li:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 a {
   color: black;
   text-decoration: none; }
 
-.AutresDocs li > span,
-.AutresDocs li > a > span {
+.AutresDocs li .taille {
   font-size: 12px;
   line-height: 1.2;
   float: right;
-  margin-right: 12px; }
-
-.AutresDocs li > a > span.fleche {
-  margin-right: -33px; }
-
-.AutresDocs .hexagon {
-  margin-left: 12px;
-  background-position: 50% 50%;
-  float: right;
-  margin-top: -11px;
-  display: inline-block; }
-
-.AutresDocs a > ul > li > a > span.fleche {
-  margin-left: 70px;
-  margin-top: -33px;
-  display: block; }
+  margin-top: 16px;
+  margin-right: 62px; }
 
 .titreDoc {
-  display: block;
-  width: 70%; }
+  display: inline-block;
+  width: 70%;
+  float: left; }
+
+.boutonSVG2 {
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 33px; }
+  .boutonSVG2 .fleche {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); }
 
 /* Mode responsive*/
 @media screen and (max-width: 580px) {
   /** RAPPORT PERSONNALISE **/
-  .listeDownload li > label {
+  .listeDownload li label {
     display: inline-block;
-    width: 70%; }
+    width: 50%; }
 
   .listeDownload li > label > svg.reduire {
     margin-right: 20px; }
@@ -256,9 +308,17 @@ a {
     display: none; }
 
   .sous-menu {
-    margin-top: 30px;
+    margin-top: 60px;
     margin-bottom: -31px;
-    margin-right: -31px; }
+    margin-right: -7px; }
+
+  .boutonSVG1-little {
+    width: 26px; }
+    .boutonSVG1-little .check {
+      left: 40%;
+      position: absolute;
+      top: 40%;
+      transform: translate(-50%, -50%); }
 
   /** PUBLICATION **/
   .Publication li {
@@ -279,7 +339,9 @@ a {
   .Publication .download > .hexagon {
     margin-left: 26px; }
 
-  /*** AUTRES DOCS **/ }
+  /*** AUTRES DOCS **/
+  .AutresDocs li .taille {
+    float: none; } }
 /*# sourceMappingURL=document.css.map */
 
 /*# sourceMappingURL=document.css.map */
