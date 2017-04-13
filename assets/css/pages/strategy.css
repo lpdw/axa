@@ -273,9 +273,22 @@ figure figcaption {
   .objectif-2 ul li span {
     color: #000;
     position: absolute;
-    top: 55px;
+    top: 70px;
     left: 0;
     font-size: 15px; }
+
+.objectif-2 li:first-child h1 {
+  color: #000;
+  position: absolute;
+  top: -48px;
+  left: 0;
+  font-size: 15px; }
+.objectif-2 li:first-child span {
+  color: #000;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  font-size: 15px; }
 
 .objectif-2 li:nth-child(2) {
   width: 55px;
@@ -306,7 +319,7 @@ figure figcaption {
   .objectif-2 li:nth-child(3) span {
     color: #000;
     position: absolute;
-    top: 65px;
+    top: 80px;
     left: 5px;
     font-size: 15px; }
 
@@ -334,7 +347,7 @@ figure figcaption {
   .objectif-2 li:nth-child(4) span {
     color: #000;
     position: absolute;
-    top: 75px;
+    top: 90px;
     left: 10px;
     font-size: 15px; }
 
@@ -363,7 +376,7 @@ figure figcaption {
   .objectif-2 li:last-child span {
     color: #000;
     position: absolute;
-    top: 95px;
+    top: 110px;
     left: 25px;
     font-size: 15px; }
 
@@ -404,7 +417,7 @@ figure figcaption {
   .objectif-3 ul li span {
     color: #000;
     position: absolute;
-    top: 55px;
+    top: 65px;
     left: 0;
     font-size: 15px; }
 
@@ -412,6 +425,18 @@ figure figcaption {
   width: 35px;
   height: 35px;
   top: 10px; }
+  .objectif-3 li:nth-child(2) h1 {
+    color: #000;
+    position: absolute;
+    top: -48px;
+    left: 0;
+    font-size: 15px; }
+  .objectif-3 li:nth-child(2) span {
+    color: #000;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    font-size: 15px; }
 
 .objectif-3 li:nth-child(2)::before {
   content: '';
@@ -437,7 +462,7 @@ figure figcaption {
   .objectif-3 li:nth-child(3) span {
     color: #000;
     position: absolute;
-    top: 65px;
+    top: 90px;
     left: 5px;
     font-size: 15px; }
 
@@ -465,7 +490,7 @@ figure figcaption {
   .objectif-3 li:nth-child(4) span {
     color: #000;
     position: absolute;
-    top: 75px;
+    top: 100px;
     left: 10px;
     font-size: 15px; }
 
@@ -494,7 +519,7 @@ figure figcaption {
   .objectif-3 li:last-child span {
     color: #000;
     position: absolute;
-    top: 95px;
+    top: 110px;
     left: 25px;
     font-size: 15px; }
 
