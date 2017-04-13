@@ -1,0 +1,431 @@
+@font-face {
+  font-family: 'ITCAvantGarde';
+  src: url("../../fonts/itc-avant-garde.otf"); }
+body {
+  margin: auto;
+    font-family: 'ITCAvantGarde';
+  background-color: #f8f8f8;
+  font-size: 14px; }
+
+/** HEADER **/
+header {
+  margin-top: 12px;
+  display: flex;
+  display: block; }
+
+ul {
+  margin-left: -41px; }
+
+.logo {
+  display: block; }
+
+.regards {
+  position: relative;
+  font-weight: 700;
+  float: right;
+  width: 73px;
+  margin-top: -45px;
+  line-height: 0.882;
+  text-align: center; }
+
+.regards span {
+  color: #e79655; }
+
+/** MAIN **/
+main {
+  margin: auto;
+  width: 80%; }
+
+h1 {
+  font-weight: bold;
+  /*font-size: 17.774px;*/ }
+
+h2 {
+  /*font-size: 16px;*/ }
+
+/** SECTION **/
+/* Rapport */
+.Rapport {
+  display: block; }
+
+.Rapport h2 {
+  border-bottom: 1px solid #e79655;
+  font-weight: bold; }
+
+.Rapport p {
+  font-size: 14px; }
+
+.Rapport p > span {
+  font-weight: bold; }
+
+//
+// .listeDownload li > .hexagon {
+//   margin-left: 15px;
+//   margin-right: -4px;
+//   margin-top: -12px;
+//   float: right;
+// }
+
+.listeDownload li  label {
+  width: 70%;
+  position: absolute;
+  float: left;
+}
+
+.listeDownload li  label > svg.reduire {
+    margin-right: 40px;
+}
+
+.listeDownload li {
+  list-style: none;
+  display: block;
+  padding: 6px;
+  background-color: #fff;
+  margin-bottom: 3px;
+  font-weight: bold;
+
+  .taille {
+    float: right;
+    margin-top: 2px;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+.Rapport button {
+  color: #e79655;
+  font-size: 14px;
+  font-weight: bold;
+  border-width: 1px;
+  font-family: 'ITCAvantGarde';
+  border-color: #e79655;
+  border-style: solid;
+  background-color: #f8f8f8;
+  float: right;
+  width: 210px;
+  height: 48px;
+  margin-bottom: 12px; }
+
+.Rapport button >  svg {
+  float: left;
+  display: inline-block;
+  margin-left: 13px;
+  margin-top: 2px;
+}
+
+.Rapport button > span {
+  font-weight: lighter;
+  display: inline-block;
+  margin-top: 14px;
+
+}
+
+
+.Rapport button > span > svg{
+  margin-left: -51px;
+}
+
+
+/*** Liste deroulant **/
+.deroulant:hover .sous-menu {
+  display: block; }
+
+.sous-menu {
+  display: block;
+  position: relative;
+  margin-top: 63px;
+  margin-bottom: -12px;
+  margin-right: -7px;
+  margin-right: -7px;
+  background-color: #f8f8f8;}
+
+.deroulant .sous-menu li:after {
+  content: ""; }
+
+.sous-menu li {
+  display: block;
+  margin-bottom: 1px;
+  background-color: #f8f8f8; }
+
+.sous-menu li  label {
+    margin-left: 51px;
+    width: 70%;
+    position: absolute;
+    float: left;
+  }
+
+.deroulant .sous-menu li > a {
+  color: white; }
+
+.deroulant .sous-menu li > .hexagon-little{
+  margin-left: 18px;
+  margin-right: 3px;
+  float: right;
+}
+
+/*****/
+.Rapport form {
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+
+.boutonSVG1 {
+  right: 10px;
+  margin-left: 20px;
+  margin-top: 9px;
+  transform: translateY(-50%);
+  width: 33px;
+  float: right;
+
+
+  .check {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate( -50%, -50% );
+  }
+
+  input {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate( -50%, -50% );
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
+.boutonSVG1-little {
+  margin-left: 20px;
+  margin-top: 9px;
+  transform: translateY(-50%);
+  float: right;
+  width: 27px;
+
+  .check {
+    left: 40%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+  input {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate( -50%, -50% );
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
+
+/*** Publication */
+.Publication {
+  clear: both;
+  display: block;
+  margin-top: 10%; }
+
+.Publication h2 {
+  border-bottom: 1px solid #e79655;
+  font-weight: bold;
+
+}
+
+.Publication li {
+  display: inline-flex;;
+  list-style: none;
+  width: 48%;
+
+   }
+
+.Publication h4 {
+  font-weight: bold;
+  color: #e79655;
+  margin-bottom: 7px;}
+
+.Publication li > span {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: lighter;
+  float: right;
+}
+
+
+.Publication div {
+  display: block;
+}
+
+.Publication .download {
+  display: block;
+
+}
+
+.Publication .download > .hexagon{
+  margin-left: 12px;
+}
+
+.Publication  li > div.descriptionIMG > a > span {
+  margin-left: 23px;
+  margin-top: -33px;
+  display: block;
+}
+
+/** AutresDocs */
+.AutresDocs {
+  clear: both;
+  display: block;
+  margin-top: 5%; }
+
+.AutresDocs h2 {
+  border-bottom: 1px solid #e79655;
+  font-weight: bold; }
+
+.AutresDocs li {
+  list-style: none;
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 2px;
+  font-weight: bold;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ }
+
+
+a {
+  color:black;
+  text-decoration: none;
+}
+.AutresDocs li .taille{
+    font-size: 12px;
+      line-height: 1.2;
+      float: right;
+      margin-top: 16px;
+      margin-right: 62px;
+}
+
+.titreDoc{
+    display: inline-block;
+    width: 70%;
+    float: left;
+
+  }
+
+.boutonSVG2 {
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 33px;
+
+  .fleche {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate( -50%, -50% );
+  }
+
+}
+
+/* Mode responsive*/
+@media screen and (max-width : 580px) {
+
+  /** RAPPORT PERSONNALISE **/
+
+
+  .listeDownload li  label {
+    display: inline-block;
+    width: 50%;
+  }
+  .listeDownload li > label > svg.reduire {
+      margin-right: 20px;
+    }
+
+  .listeDownload li > a {
+    display: flex;
+
+  }
+
+  .listeDownload li >.hexagon{
+    display: block;
+    margin-right: -17px;
+  }
+
+  input {
+    display: none;
+  }
+  .sous-menu {
+    margin-top: 60px;
+    margin-bottom: -31px;
+    margin-right: -7px;
+  }
+
+  .boutonSVG1-little {
+    width: 26px;
+
+    .check {
+      left: 40%;
+      position: absolute;
+      top: 40%;
+      transform: translate(-50%, -50%);
+    }
+
+  }
+
+  /** PUBLICATION **/
+  .Publication li {
+    display: block;
+    width: 100%;
+    margin-bottom:57px;
+    text-align: center;
+  }
+  .Publication img {
+    display: block;
+    width: 30%;
+  }
+  .Publication div {
+    float: right;
+    width: 66%;
+    margin-top: -73px;
+
+  }
+  .Publication .download > .hexagon {
+      margin-left: 26px;
+  }
+
+  /*** AUTRES DOCS **/
+  .AutresDocs li .taille {
+    float: none;
+  }
+
+}
+/*# sourceMappingURL=document.css.map */
