@@ -1,69 +1,95 @@
-/*
-Error: Invalid CSS after "...egy-bg: #f8f8f8": expected "{", was ";"
-        on line 3 of /Users/IntelliJ/Documents/HTML_CSS/TP_AXA/axa-GP5/assets/scss/_variables.scss
-        from line 1 of assets/scss/pages/index.scss
+.header-nav {
+  position: absolute;
+  z-index: 99999;
+  height: 80px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .header-nav .img-header {
+    flex-grow: 2; }
+  .header-nav .text-header p {
+    text-align: center;
+    line-height: 0.1em;
+    font-weight: bold;
+    font-size: 1.5em; }
 
-1: <<<<<<< HEAD
-2: // strategy
-3: $strategy-bg: #f8f8f8;
-4: $breakpoint-mobile: 640px;
-5: $yellow: #ffff00;
-6: =======
-7: >>>>>>> b1de3a0bde8cdf2b2b5c388e06bcb91c2dd5d2b1
+#bg {
+  position: relative;
+  background-image: url("../../img/home/axa_hopwork_070.jpg");
+  z-index: 1000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; }
 
-Backtrace:
-/Users/IntelliJ/Documents/HTML_CSS/TP_AXA/axa-GP5/assets/scss/_variables.scss:3
-assets/scss/pages/index.scss:1
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:674:in `block_contents'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...egy-bg: #f8f8f8\": expected \"{\", was \";\"\A         on line 3 of /Users/IntelliJ/Documents/HTML_CSS/TP_AXA/axa-GP5/assets/scss/_variables.scss\A         from line 1 of assets/scss/pages/index.scss\A \A 1: <<<<<<< HEAD\A 2: // strategy\A 3: $strategy-bg: #f8f8f8;\A 4: $breakpoint-mobile: 640px;\A 5: $yellow: #ffff00;\A 6: =======\A 7: >>>>>>> b1de3a0bde8cdf2b2b5c388e06bcb91c2dd5d2b1"; }
+.nav-polygon {
+  z-index: 999999;
+  top: 20%;
+  position: relative; }
+  .nav-polygon .ul-polygon {
+    position: relative; }
+    .nav-polygon .ul-polygon li {
+      list-style-type: none;
+      display: inline-block;
+      position: absolute;
+      width: 551.9px; }
+      .nav-polygon .ul-polygon li:nth-child(1) {
+        left: 0;
+        top: 0; }
+      .nav-polygon .ul-polygon li:nth-child(2) {
+        right: 0;
+        top: 237px; }
+      .nav-polygon .ul-polygon li:nth-child(3) {
+        left: 0;
+        top: 473.8px; }
+      .nav-polygon .ul-polygon li:nth-child(4) {
+        right: 0;
+        top: 711.8px; }
+      .nav-polygon .ul-polygon li svg {
+        fill: rgba(255, 255, 255, 0.4);
+        color: transparent; }
+        .nav-polygon .ul-polygon li svg:hover #polygone1 {
+          fill: blue; }
+        .nav-polygon .ul-polygon li svg:hover #polygone2 {
+          fill: red; }
+        .nav-polygon .ul-polygon li svg:hover #polygone3 {
+          fill: red; }
+        .nav-polygon .ul-polygon li svg:hover #polygone4 {
+          fill: green; }
+        .nav-polygon .ul-polygon li svg:hover #polygone5 {
+          fill: pink; }
+        .nav-polygon .ul-polygon li svg:hover #polygone6 {
+          fill: yellow; }
+
+@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
+  .burger-menu,
+  .header-nav .burger-menu {
+    flex-grow: 3;
+    background: url("../../img/common/Hamburger_menu.png") no-repeat cover;
+    width: 50px;
+    height: 50px; }
+
+  .nav-polygon ul li {
+    display: inline-block; }
+
+  .nav-polygon ul li:nth-child(2) {
+    top: -20%; }
+
+  .img-header {
+    width: 12em;
+    height: auto; }
+
+  .hidden-text-header {
+    display: none; }
+
+  .nav-polygon ul li:nth-child(6) {
+    display: none; }
+
+  .nav-polygon ul li:nth-child(5) {
+    display: none; } }
+
+/*# sourceMappingURL=index.css.map */

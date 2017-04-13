@@ -1,1 +1,8 @@
-$(document).ready(function())
+window.onload = function() {
+  countSizeDocuments();
+}
+
+function countSizeDocuments()
+{
+
+}
