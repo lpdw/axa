@@ -1,47 +1,132 @@
 @import "variables";
 
-body{
-  background: #787878;
-  width: 1290px;
-
-  .header-nav{
-
-    height: 150px;
-    width: 100%;
+.header-nav {
+    position: absolute;
+    z-index: 99999;
+    height: 80px;
+    top: 0;
+    left: 0;
     background-color: #ffffff;
+    min-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
+    align-items: center;
 
-    .text-header p{
-      font-weight: bold;
-      font-size: 4.5em;
+    .img-header {
+        flex-grow: 2;
     }
 
-  }
-  main{
-    width: 100%;
-  }
+    .text-header p {
+        text-align: center;
+        line-height: 0.1em;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+}
 
-  .main-page{
-    background: url('../../img/home/axa_hopwork_070.jpg') no-repeat;
-    background-size: contain;
-  }
+#bg {
+    position: relative;
+    background-image: url("../../img/home/axa_hopwork_070.jpg");
+    z-index: 1000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 
 
-@media (min-width: $breakpoint-mobile) {
-  .burger-menu{
-    background: url('../../img/common/Hamburger_menu.png') no-repeat;
-    width: 100px;
-    height: 100px;
-    background-size: contain;
-  }
+.nav-polygon {
+    z-index: 999999;
+    top: 20%;
+    position: relative;
+    .ul-polygon {
+      position: relative;
 
-  .hidden-text-header{
-    display: none;
-  }
+      li {
+          list-style-type: none;
+          display: inline-block;
+          position: absolute;
+          width: 551.9px;
+          &:nth-child(1){
+            left:0;
+            top: 0;
+          }
+          &:nth-child(2)
+          {
+            right: 0;
+            top: 237px;
+          }
+          &:nth-child(3)
+          {
+            left: 0;
+            top: 473.8px;
+          }
+          &:nth-child(4)
+          {
+            right: 0;
+            top: 711.8px;
+          }
 
+          svg {
+              fill: rgba(255,255,255,0.4);
+              color: transparent;
+              &:hover{
+                #polygone1{
+                  fill: blue;
+                }
+                #polygone2{
+                  fill: red;
+                }
+                #polygone3{
+                  fill: red;
+                }
+                #polygone4{
+                  fill: green;
+                }
+                #polygone5{
+                  fill: pink;
+                }
+                #polygone6{
+                  fill: yellow;
+                }
+              }
+          }
+      }
+    }
+
+}
+@media only screen and (max-width: $breakpoint-mobile), only screen and (max-device-width: $breakpoint-mobile) {
+    .burger-menu,
+    .header-nav .burger-menu {
+        flex-grow: 3;
+        background: url('../../img/common/Hamburger_menu.png') no-repeat cover;
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-polygon ul li {
+        display: inline-block;
+    }
+
+    .nav-polygon ul li:nth-child(2) {
+        top: -20%;
+    }
+
+    .img-header {
+        width: 12em;
+        height: auto;
+    }
+
+    .hidden-text-header {
+        display: none;
+    }
+
+    .nav-polygon ul li:nth-child(6) {
+        display: none;
+    }
+
+    .nav-polygon ul li:nth-child(5) {
+        display: none;
+    }
 }
