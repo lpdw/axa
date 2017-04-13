@@ -129,11 +129,18 @@ figure figcaption {
   position: relative;
   margin-top: 75px; }
 
+.objectif-1 ul {
+  width: 100%;
+  height: 50%;
+  padding: 1%; }
+
 .objectif-1 ul li {
-  width: 40px;
-  height: 40px;
+  width: 7%;
+  height: 0;
+  padding-top: 7%;
+  -moz-border-radius: 55%;
+  -webkit-border-radius: 50%;
   text-align: center;
-  border-radius: 55%;
   border: 1px solid #000;
   margin: 0 1em;
   display: inline-block;
@@ -155,17 +162,18 @@ figure figcaption {
 .objectif-1 li:nth-child(2)::before {
   content: '';
   position: absolute;
-  top: 19.8px;
-  left: -150px;
-  width: 173px;
+  top: 43%;
+  left: -240%;
+  width: 290%;
   height: 1px;
   color: red;
   background: #000; }
 
 .objectif-1 li:nth-child(3) {
   top: -10px;
-  width: 50px;
-  height: 50px; }
+  width: 7%;
+  height: 0;
+  padding-top: 7%; }
   .objectif-1 li:nth-child(3) h1 {
     color: #000;
     position: absolute;
@@ -182,18 +190,19 @@ figure figcaption {
 .objectif-1 li:nth-child(3)::before {
   content: '';
   position: absolute;
-  top: 20px;
-  left: -145px;
-  width: 170px;
+  top: 40%;
+  left: -235%;
+  width: 290%;
   height: 1px;
   color: red;
   background: #000;
-  -webkit-transform: translateY(7px) translateX(-2px) rotate(-2deg); }
+  -webkit-transform: translateY(7px) translateX(-2px) rotate(-3deg); }
 
 .objectif-1 li:nth-child(4) {
   top: -20px;
-  width: 60px;
-  height: 60px; }
+  width: 7%;
+  height: 0;
+  padding-top: 7%; }
   .objectif-1 li:nth-child(4) h1 {
     color: #000;
     position: absolute;
@@ -210,18 +219,19 @@ figure figcaption {
 .objectif-1 li:nth-child(4)::before {
   content: '';
   position: absolute;
-  top: 24px;
-  left: -157px;
-  width: 190px;
+  top: 40%;
+  left: -235%;
+  width: 290%;
   height: 1px;
   color: red;
   background: #000;
-  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2deg); }
+  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-3deg); }
 
 .objectif-1 li:last-child {
   top: -40px;
-  width: 80px;
-  height: 80px;
+  width: 7%;
+  height: 0;
+  padding-top: 7%;
   background: #5a8fa6; }
   .objectif-1 li:last-child h1 {
     color: #000;
@@ -239,13 +249,12 @@ figure figcaption {
 .objectif-1 li:last-child::before {
   content: '';
   position: absolute;
-  top: 37px;
-  left: -157px;
-  width: 200px;
+  top: 50%;
+  left: -232.72727%;
+  width: 284.44444%;
   height: 1px;
-  color: red;
   background: #000;
-  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2deg); }
+  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-5deg); }
 
 /**************************************************************************\
                   OBJECTIF 2
@@ -255,8 +264,9 @@ figure figcaption {
   margin-top: 75px; }
 
 .objectif-2 ul li {
-  width: 40px;
-  height: 40px;
+  width: 7%;
+  height: 0;
+  padding-top: 7%;
   text-align: center;
   border-radius: 55%;
   border: 1px solid #000;
@@ -291,25 +301,26 @@ figure figcaption {
   font-size: 15px; }
 
 .objectif-2 li:nth-child(2) {
-  width: 55px;
-  height: 55px;
-  top: -15px; }
+  width: 7%;
+  height: 0;
+  padding-top: 7%;
+  top: -4px; }
 
 .objectif-2 li:nth-child(2)::before {
   content: '';
   position: absolute;
-  top: 22px;
-  left: -140px;
-  width: 170px;
+  top: 36.36364%;
+  left: -232.72727%;
+  width: 284.44444%;
   height: 1px;
-  color: red;
   background: #000;
-  -webkit-transform: translateY(10px) translateX(-2px) rotate(-2.5deg); }
+  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2deg); }
 
 .objectif-2 li:nth-child(3) {
-  top: -25px;
-  width: 65px;
-  height: 65px; }
+  top: -10px;
+  width: 7%;
+  height: 0;
+  padding-top: 7%; }
   .objectif-2 li:nth-child(3) h1 {
     color: #000;
     position: absolute;
@@ -326,18 +337,18 @@ figure figcaption {
 .objectif-2 li:nth-child(3)::before {
   content: '';
   position: absolute;
-  top: 27px;
-  left: -146px;
-  width: 178px;
+  top: 33.33333%;
+  left: -232.72727%;
+  width: 301.17647%;
   height: 1px;
-  color: red;
   background: #000;
-  -webkit-transform: translateY(7px) translateX(-3px) rotate(-2.7deg); }
+  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2.5deg); }
 
 .objectif-2 li:nth-child(4) {
-  top: -35px;
-  width: 75px;
-  height: 75px; }
+  top: -15px;
+  width: 7%;
+  height: 0;
+  padding-top: 7%; }
   .objectif-2 li:nth-child(4) h1 {
     color: #000;
     position: absolute;
@@ -354,18 +365,18 @@ figure figcaption {
 .objectif-2 li:nth-child(4)::before {
   content: '';
   position: absolute;
-  top: 29px;
-  left: -157px;
-  width: 196px;
+  top: 31.57895%;
+  left: -232.72727%;
+  width: 301.17647%;
   height: 1px;
-  color: red;
   background: #000;
-  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2.5deg); }
+  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2deg); }
 
 .objectif-2 li:last-child {
-  top: -50px;
-  width: 80px;
-  height: 80px;
+  top: -20px;
+  width: 7%;
+  height: 0;
+  padding-top: 7%;
   background: #5a8fa6; }
   .objectif-2 li:last-child h1 {
     color: #000;
@@ -383,13 +394,12 @@ figure figcaption {
 .objectif-2 li:last-child::before {
   content: '';
   position: absolute;
-  top: 35px;
-  left: -157px;
-  width: 200px;
+  top: 29.41176%;
+  left: -237.03704%;
+  width: 284.44444%;
   height: 1px;
-  color: red;
   background: #000;
-  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2.7deg); }
+  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2deg); }
 
 /**************************************************************************\
                   OBJECTIF 3
@@ -399,8 +409,9 @@ figure figcaption {
   margin-top: 75px; }
 
 .objectif-3 ul li {
-  width: 40px;
-  height: 40px;
+  width: 7%;
+  height: 0;
+  padding-top: 7%;
   text-align: center;
   border-radius: 55%;
   border: 1px solid #000;
@@ -412,47 +423,49 @@ figure figcaption {
     color: #000;
     position: absolute;
     top: -48px;
-    left: 7px;
+    left: 0;
     font-size: 15px; }
   .objectif-3 ul li span {
     color: #000;
     position: absolute;
-    top: 65px;
+    top: 70px;
     left: 0;
     font-size: 15px; }
 
+.objectif-3 li:first-child h1 {
+  color: #000;
+  position: absolute;
+  top: -48px;
+  left: 0;
+  font-size: 15px; }
+.objectif-3 li:first-child span {
+  color: #000;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  font-size: 15px; }
+
 .objectif-3 li:nth-child(2) {
-  width: 35px;
-  height: 35px;
-  top: 10px; }
-  .objectif-3 li:nth-child(2) h1 {
-    color: #000;
-    position: absolute;
-    top: -48px;
-    left: 0;
-    font-size: 15px; }
-  .objectif-3 li:nth-child(2) span {
-    color: #000;
-    position: absolute;
-    top: 55px;
-    left: 0;
-    font-size: 15px; }
+  width: 7%;
+  height: 0;
+  padding-top: 7%;
+  top: 8px; }
 
 .objectif-3 li:nth-child(2)::before {
   content: '';
   position: absolute;
-  top: 5px;
-  left: -145px;
-  width: 165px;
+  top: 21.05263%;
+  left: -232.72727%;
+  width: 284.44444%;
   height: 1px;
-  color: red;
   background: #000;
-  -webkit-transform: translateY(7px) translateX(-2px) rotate(3deg); }
+  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(3deg); }
 
 .objectif-3 li:nth-child(3) {
-  top: -25px;
-  width: 65px;
-  height: 65px; }
+  top: -8px;
+  width: 7%;
+  height: 0;
+  padding-top: 7%; }
   .objectif-3 li:nth-child(3) h1 {
     color: #000;
     position: absolute;
@@ -462,25 +475,25 @@ figure figcaption {
   .objectif-3 li:nth-child(3) span {
     color: #000;
     position: absolute;
-    top: 90px;
+    top: 80px;
     left: 5px;
     font-size: 15px; }
 
 .objectif-3 li:nth-child(3)::before {
   content: '';
   position: absolute;
-  top: 34px;
-  left: -140px;
-  width: 178px;
+  top: 44.44444%;
+  left: -237.03704%;
+  width: 301.17647%;
   height: 1px;
-  color: red;
   background: #000;
-  -webkit-transform: translateY(6.5px) translateX(-3px) rotate(-7deg); }
+  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-3deg); }
 
 .objectif-3 li:nth-child(4) {
-  top: -35px;
-  width: 75px;
-  height: 75px; }
+  top: -15px;
+  width: 7%;
+  height: 0;
+  padding-top: 7%; }
   .objectif-3 li:nth-child(4) h1 {
     color: #000;
     position: absolute;
@@ -490,31 +503,31 @@ figure figcaption {
   .objectif-3 li:nth-child(4) span {
     color: #000;
     position: absolute;
-    top: 100px;
+    top: 90px;
     left: 10px;
     font-size: 15px; }
 
 .objectif-3 li:nth-child(4)::before {
   content: '';
   position: absolute;
-  top: 29px;
-  left: -157px;
-  width: 200px;
+  top: 42.10526%;
+  left: -232.72727%;
+  width: 301.17647%;
   height: 1px;
-  color: red;
   background: #000;
-  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2.5deg); }
+  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2deg); }
 
 .objectif-3 li:last-child {
-  top: -50px;
-  width: 80px;
-  height: 80px;
+  top: -20px;
+  width: 7%;
+  height: 0;
+  padding-top: 7%;
   background: #5a8fa6; }
   .objectif-3 li:last-child h1 {
     color: #000;
     position: absolute;
     top: -50px;
-    left: 30px;
+    left: 25px;
     font-size: 15px; }
   .objectif-3 li:last-child span {
     color: #000;
@@ -526,13 +539,12 @@ figure figcaption {
 .objectif-3 li:last-child::before {
   content: '';
   position: absolute;
-  top: 35px;
-  left: -157px;
-  width: 200px;
+  top: 41.66667%;
+  left: -222.22222%;
+  width: 266.66667%;
   height: 1px;
-  color: red;
   background: #000;
-  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2.7deg); }
+  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2deg); }
 
 /**************************************************************************\
                   OBJECTIF 4
@@ -542,8 +554,9 @@ figure figcaption {
   margin-top: 55px; }
 
 .objectif-4 ul li {
-  width: 80px;
-  height: 80px;
+  width: 7%;
+  height: 0;
+  padding-top: 7%;
   text-align: center;
   border-radius: 55%;
   border: 1px solid #000;
@@ -569,7 +582,7 @@ figure figcaption {
   position: absolute;
   top: 35px;
   left: -150px;
-  width: 12em;
+  width: 252%;
   height: 1px;
   background: #000; }
 
@@ -633,6 +646,402 @@ figure figcaption {
     font-size: 15px; }
 
   .has-big-hexa div {
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  /**************************************************************************\
+                    OBJECTIF 1
+  \**************************************************************************/
+  .objectif-1 li:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 21%;
+    left: -240%;
+    width: 290%;
+    height: 1px;
+    color: red;
+    background: #000;
+    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(0deg); }
+
+  .objectif-1 li:nth-child(3) {
+    top: -5px;
+    width: 7%;
+    height: 0;
+    padding-top: 7%; }
+    .objectif-1 li:nth-child(3) h1 {
+      color: #000;
+      position: absolute;
+      top: -48px;
+      left: 5px;
+      font-size: 15px; }
+    .objectif-1 li:nth-child(3) span {
+      color: #000;
+      position: absolute;
+      top: 65px;
+      left: 5px;
+      font-size: 15px; }
+
+  .objectif-1 li:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    top: 27%;
+    left: -235%;
+    width: 290%;
+    height: 1px;
+    color: red;
+    background: #000;
+    -webkit-transform: translateY(7px) translateX(-1px) rotate(-3.8deg); }
+
+  .objectif-1 li:nth-child(4) {
+    top: -12px;
+    width: 7%;
+    height: 0;
+    padding-top: 7%; }
+    .objectif-1 li:nth-child(4) h1 {
+      color: #000;
+      position: absolute;
+      top: -48px;
+      left: 10px;
+      font-size: 15px; }
+    .objectif-1 li:nth-child(4) span {
+      color: #000;
+      position: absolute;
+      top: 75px;
+      left: 10px;
+      font-size: 15px; }
+
+  .objectif-1 li:nth-child(4)::before {
+    content: '';
+    position: absolute;
+    top: 32%;
+    left: -235%;
+    width: 290%;
+    height: 1px;
+    color: red;
+    background: #000;
+    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-4.5deg); }
+
+  .objectif-1 li:last-child {
+    top: -22px;
+    width: 7%;
+    height: 0;
+    padding-top: 7%;
+    background: #5a8fa6; }
+    .objectif-1 li:last-child h1 {
+      color: #000;
+      position: absolute;
+      top: -50px;
+      left: 25px;
+      font-size: 15px; }
+    .objectif-1 li:last-child span {
+      color: #000;
+      position: absolute;
+      top: 95px;
+      left: 25px;
+      font-size: 15px; }
+
+  .objectif-1 li:last-child::before {
+    content: '';
+    position: absolute;
+    top: 37%;
+    left: -232.72727%;
+    width: 284.44444%;
+    height: 1px;
+    background: #000;
+    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-6deg); }
+
+  /**************************************************************************\
+                    OBJECTIF 2
+  \**************************************************************************/
+  .objectif-2 ul {
+    position: relative;
+    margin-top: 75px; }
+
+  .objectif-2 ul li {
+    width: 7%;
+    height: 0;
+    padding-top: 7%;
+    text-align: center;
+    border-radius: 55%;
+    border: 1px solid #000;
+    margin: 0 1em;
+    display: inline-block;
+    color: black;
+    position: relative; }
+    .objectif-2 ul li h1 {
+      color: #000;
+      position: absolute;
+      top: -48px;
+      left: 0;
+      font-size: 15px; }
+    .objectif-2 ul li span {
+      color: #000;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      font-size: 15px; }
+
+  .objectif-2 li:first-child h1 {
+    color: #000;
+    position: absolute;
+    top: -48px;
+    left: 0;
+    font-size: 15px; }
+  .objectif-2 li:first-child span {
+    color: #000;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    font-size: 15px; }
+
+  .objectif-2 li:nth-child(2) {
+    width: 7%;
+    height: 0;
+    padding-top: 7%;
+    top: -4px; }
+
+  .objectif-2 li:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 26.66667%;
+    left: -232.72727%;
+    width: 284.44444%;
+    height: 1px;
+    background: #000;
+    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-3deg); }
+
+  .objectif-2 li:nth-child(3) {
+    top: -10px;
+    width: 7%;
+    height: 0;
+    padding-top: 7%; }
+    .objectif-2 li:nth-child(3) h1 {
+      color: #000;
+      position: absolute;
+      top: -48px;
+      left: 5px;
+      font-size: 15px; }
+    .objectif-2 li:nth-child(3) span {
+      color: #000;
+      position: absolute;
+      top: 80px;
+      left: 5px;
+      font-size: 15px; }
+
+  .objectif-2 li:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    top: 33.33333%;
+    left: -232.72727%;
+    width: 301.17647%;
+    height: 1px;
+    background: #000;
+    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-5deg); }
+
+  .objectif-2 li:nth-child(4) {
+    top: -15px;
+    width: 7%;
+    height: 0;
+    padding-top: 7%; }
+    .objectif-2 li:nth-child(4) h1 {
+      color: #000;
+      position: absolute;
+      top: -48px;
+      left: 10px;
+      font-size: 15px; }
+    .objectif-2 li:nth-child(4) span {
+      color: #000;
+      position: absolute;
+      top: 90px;
+      left: 10px;
+      font-size: 15px; }
+
+  .objectif-2 li:nth-child(4)::before {
+    content: '';
+    position: absolute;
+    top: 30.76923%;
+    left: -232.72727%;
+    width: 301.17647%;
+    height: 1px;
+    background: #000;
+    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-4deg); }
+
+  .objectif-2 li:last-child {
+    top: -20px;
+    width: 7%;
+    height: 0;
+    padding-top: 7%;
+    background: #5a8fa6; }
+    .objectif-2 li:last-child h1 {
+      color: #000;
+      position: absolute;
+      top: -50px;
+      left: 25px;
+      font-size: 15px; }
+    .objectif-2 li:last-child span {
+      color: #000;
+      position: absolute;
+      top: 110px;
+      left: 25px;
+      font-size: 15px; }
+
+  .objectif-2 li:last-child::before {
+    content: '';
+    position: absolute;
+    top: 33.33333%;
+    left: -237.03704%;
+    width: 284.44444%;
+    height: 1px;
+    background: #000;
+    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-4deg); }
+
+  /**************************************************************************\
+                    OBJECTIF 3
+  \**************************************************************************/
+  .objectif-3 ul {
+    position: relative;
+    margin-top: 75px; }
+
+  .objectif-3 ul li {
+    width: 7%;
+    height: 0;
+    padding-top: 7%;
+    text-align: center;
+    border-radius: 55%;
+    border: 1px solid #000;
+    margin: 0 1em;
+    display: inline-block;
+    color: black;
+    position: relative; }
+    .objectif-3 ul li h1 {
+      color: #000;
+      position: absolute;
+      top: -48px;
+      left: 0;
+      font-size: 15px; }
+    .objectif-3 ul li span {
+      color: #000;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      font-size: 15px; }
+
+  .objectif-3 li:first-child h1 {
+    color: #000;
+    position: absolute;
+    top: -48px;
+    left: 0;
+    font-size: 15px; }
+  .objectif-3 li:first-child span {
+    color: #000;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    font-size: 15px; }
+
+  .objectif-3 li:nth-child(2) {
+    width: 7%;
+    height: 0;
+    padding-top: 7%;
+    top: 6px; }
+
+  .objectif-3 li:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 10.52632%;
+    left: -232.72727%;
+    width: 284.44444%;
+    height: 1px;
+    background: #000;
+    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(4deg); }
+
+  .objectif-3 li:nth-child(3) {
+    top: -4px;
+    width: 7%;
+    height: 0;
+    padding-top: 7%; }
+    .objectif-3 li:nth-child(3) h1 {
+      color: #000;
+      position: absolute;
+      top: -48px;
+      left: 5px;
+      font-size: 15px; }
+    .objectif-3 li:nth-child(3) span {
+      color: #000;
+      position: absolute;
+      top: 80px;
+      left: 5px;
+      font-size: 15px; }
+
+  .objectif-3 li:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    top: 36.36364%;
+    left: -237.03704%;
+    width: 301.17647%;
+    height: 1px;
+    background: #000;
+    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-8deg); }
+
+  .objectif-3 li:nth-child(4) {
+    top: -10px;
+    width: 7%;
+    height: 0;
+    padding-top: 7%; }
+    .objectif-3 li:nth-child(4) h1 {
+      color: #000;
+      position: absolute;
+      top: -48px;
+      left: 10px;
+      font-size: 15px; }
+    .objectif-3 li:nth-child(4) span {
+      color: #000;
+      position: absolute;
+      top: 90px;
+      left: 10px;
+      font-size: 15px; }
+
+  .objectif-3 li:nth-child(4)::before {
+    content: '';
+    position: absolute;
+    top: 30.76923%;
+    left: -232.72727%;
+    width: 301.17647%;
+    height: 1px;
+    background: #000;
+    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-5deg); }
+
+  .objectif-3 li:last-child {
+    top: -15px;
+    width: 7%;
+    height: 0;
+    padding-top: 7%;
+    background: #5a8fa6; }
+    .objectif-3 li:last-child h1 {
+      color: #000;
+      position: absolute;
+      top: -50px;
+      left: 25px;
+      font-size: 15px; }
+    .objectif-3 li:last-child span {
+      color: #000;
+      position: absolute;
+      top: 110px;
+      left: 25px;
+      font-size: 15px; }
+
+  .objectif-3 li:last-child::before {
+    content: '';
+    position: absolute;
+    top: 35.71429%;
+    left: -222.22222%;
+    width: 266.66667%;
+    height: 1px;
+    background: #000;
+    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2deg); } }
+.boitealanoix {
+  background: red;
+  height: 0;
+  padding-top: 20.79002%;
+  width: 20.79002%; }
 
 /*# sourceMappingURL=strategy.css.map */
