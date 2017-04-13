@@ -213,7 +213,7 @@ h2 {
 .Publication h4 {
   font-weight: bold;
   color: #e79655;
-  margin-bottom: 7px; }
+  margin-bottom: 40px; }
 
 .Publication li > span {
   font-size: 12px;
@@ -230,10 +230,22 @@ h2 {
 .Publication .download > .hexagon {
   margin-left: 12px; }
 
-.Publication li > div.descriptionIMG > a > span {
-  margin-left: 23px;
+.Publication li > div.descriptionIMG > a .taille {
+  margin-left: -1px;
   margin-top: -33px;
   display: block; }
+
+.btnSVG {
+  transform: translateY(-50%);
+  width: 33px;
+  display: block;
+  margin-top: 24px;
+  margin-left: 12px; }
+  .btnSVG .fleche {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); }
 
 /** AutresDocs */
 .AutresDocs {
@@ -336,8 +348,8 @@ a {
     width: 66%;
     margin-top: -73px; }
 
-  .Publication .download > .hexagon {
-    margin-left: 26px; }
+  .Publication .download > .btnSVG {
+    margin-left: 84px; }
 
   /*** AUTRES DOCS **/
   .AutresDocs li .taille {
