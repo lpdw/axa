@@ -1,251 +1,886 @@
-html, body {
-  background-color: #f8f8f8;
-  font-family: Verdana, sans-serif;
+body,
+html {
+  background-color : #f8f8f8;
+  font-family      : Verdana,
+                     sans-serif;
 }
 
-main {
-  max-width: 960px;
-  margin: 0 auto;
+.strategy {
+  max-width : 960px;
+  margin    : 0 auto;
+
+  .title {
+    text-align  : center;
+    font-size   : 40px;
+    font-weight : bold;
+  }
+
+  .subtitle {
+    padding-bottom : 5px;
+    color          : #292929;
+    border-bottom  : 1px solid #5a8fa6;
+    font-size      : 15px;
+    font-weight    : bold;
+  }
 
   div.has-big-hexa {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-around;
   }
 
   .infos {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    cursor: pointer;
+    display         : flex;
+    align-items     : center;
+    justify-content : flex-start;
+    cursor          : pointer;
 
-    margin-left: 10px;
-    p {
-      font-size: 16.5px;
-      margin-left: 10px;
-
-      span {
-        color: #636363;
-      }
+    span {
+      color : #636363;
     }
   }
-
-}
-
-.title {
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.subtitle {
-  color: #292929;
-  font-size: 15px;
-  font-weight: bold;
-  border-bottom: 1px solid #5a8fa6;
-  padding-bottom: 5px;
 }
 
 .svg-container {
-  display: flex;
-  position: relative;
-  justify-content: flex-end;
-  overflow: hidden;
+  display         : flex;
+  position        : relative;
+  overflow        : hidden;
+  justify-content : flex-end;
 }
 
 .svg-container .arrow {
-  width: 8px;
-  height: 20px;
-  position: absolute;
-  left: 27.5%;
-  top: 25%;
+  position : absolute;
+  top      : 25%;
+  left     : 27.5%;
+  width    : 8px;
+  height   : 20px;
 }
 
 .svg-container .percentage {
-  position: absolute;
-  left: 10%;
-  top: 25%;
+  position : absolute;
+  top      : 25%;
+  left     : 10%;
 }
 
 .svg-container .percentage {
-  position: absolute;
-  left: 20%;
-  top: 25%;
+  position : absolute;
+  top      : 25%;
+  left     : 20%;
 }
 
 .svg-container .euro {
-  position: absolute;
-  left: 25%;
-  top: 25%;
+  position : absolute;
+  top      : 25%;
+  left     : 25%;
 }
 
 .svg-container .line {
-  position: absolute;
-  left: 20%;
-  top: 43%;
+  position : absolute;
+  top      : 43%;
+  left     : 20%;
 }
 
 .svg-container .stat {
-  position: absolute;
-  left: 20%;
-  top: 30%;
+  position : absolute;
+  top      : 30%;
+  left     : 20%;
 }
 
 .icon {
-  fill: #f8f8f8;
-  stroke: #5a8fa6;
-  stroke-width: 10;
+  fill   : #f8f8f8;
+  stroke : #5a8fa6;
+  stroke-width: 5px;
 }
 
-.pillier svg, .priority svg {
-  width: 80%;
+.pillier svg,
+.priority svg {
+  width : 80%;
 }
 
 .priority .priority-1 {
-  fill: #98c67f;
+  fill : #98c67f;
 }
 
 .priority .priority-2 {
-  fill: #f0847a;
+  fill : #f0847a;
 }
 
 .priority .priority-3 {
-  fill: #fcc04b;
+  fill : #fcc04b;
 }
 
-.pillier .pillier-1, .pillier .pillier-2 {
-  fill: #5a8fa6;
-  stroke: #fff;
-  stroke-width: 1px;
-  fill-rule: evenodd;
+.pillier .pillier-1,
+.pillier .pillier-2 {
+  fill   : #5a8fa6;
+  stroke : #fff;
 }
 
 figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
+  display         : flex;
+  position        : relative;
+  align-items     : center;
+  justify-content : center;
 
-figure figcaption {
-  position: absolute;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 50%;
-  line-height: 25px;
-  text-align: center;
-  color: #fff;
-  font-size: 17px;
+  figcaption {
+    display     : flex;
+    position    : absolute;
+    max-width   : 40%;
+    margin      : 0 auto;
+    color       : #fff;
+    text-align  : center;
+    font-size   : 90%;
+    flex-wrap   : wrap;
+    line-height : 25px;
+  }
 }
 
 .has-big-hexa div {
-  max-width: 300px;
+  max-width : 300px;
 }
 
 .has-big-hexa div p:last-child {
-  color: #727272;
-  line-height: 22px;
+  color       : #727272;
+  line-height : 22px;
 }
 
-/**************************************************************************\
-                  MEDIA QUERIES
-\**************************************************************************/
-@media screen and (max-width : 580px) {
+// OBJECTIF 1 , 2 , 3 & 4
 
-  .title {
-    font-size: 20px;
+.objectif-1 ul,
+.objectif-2 ul,
+.objectif-3 ul,
+.objectif-4 ul {
+  display         : flex;
+  position        : relative;
+  margin-bottom   : 1em;
+  margin-left     : -30px;
+  padding         : 3em;
+  justify-content : space-around;
+  list-style-type : none;
+
+  li {
+    text-align : center;
+
+    &:hover {
+      background-color : #5a8fa6;
+    }
+
+    h1 {
+      position  : absolute;
+      top       : -48px;
+      left      : 10px;
+      color     : #000;
+      font-size : 15px;
+    }
+
+    span {
+      position : absolute;
+      top      : 140%;
+      left     : 5px;
+    }
   }
+}
 
-  main {
+/**
+ * ************************************************************************\
+ * OBJECTIF 1
+ * \*************************************************************************
+ */
+
+.objectif-1 ul {
+  position   : relative;
+  margin-top : 50px;
+}
+
+.objectif-1 ul li {
+  display               : inline-block;
+  position              : relative;
+  width                 : 4%;
+  height                : 0;
+  padding-top           : 4%;
+  color                 : black;
+  border                : 1px solid #000;
+  -moz-border-radius    : 55%;
+  -webkit-border-radius : 50%;
+}
+
+.objectif-1 li:nth-child(2)::before {
+  content    : '';
+  position   : absolute;
+  top        : (200 / 400 * 100%);
+  left       : -(990 / 235 * 100%);
+  width      : (1080 / 225 * 100%);
+  height     : 1px;
+  color      : red;
+  background : #000;
+}
+
+.objectif-1 li:nth-child(3) {
+  top         : -10px;
+  width       : 5%;
+  height      : 0;
+  padding-top : 5%;
+}
+
+.objectif-1 li:nth-child(3)::before {
+  content    : '';
+  position   : absolute;
+  top        : (200 / 500 * 100%);
+  left       : -(790 / 235 * 100%);
+  width      : (900 / 200 * 100%);
+  height     : 1px;
+  color      : red;
+  background : #000;
+  transform  : translateY(6px) translateX(-2px) rotate(-2deg);
+}
+
+.objectif-1 li:nth-child(4) {
+  top         : -20px;
+  width       : 6%;
+  height      : 0;
+  padding-top : 6%;
+}
+
+.objectif-1 li:nth-child(4)::before {
+  content    : '';
+  position   : absolute;
+  top        : (200 / 500 * 100%);
+  left       : -(790 / 330 * 100%);
+  width      : (900 / 290 * 100%);
+  height     : 1px;
+  color      : red;
+  background : #000;
+  transform  : translateY(5px) translateX(-1px) rotate(-2deg);
+}
+
+.objectif-1 li:last-child {
+  top         : -40px;
+  width       : 7%;
+  height      : 0;
+  padding-top : 7%;
+  background  : #5a8fa6;
+}
+
+.objectif-1 li:last-child::before {
+  content    : '';
+  position   : absolute;
+  top        : (310 / 600 * 100%);
+  left       : -(1220 / 500 * 100%);
+  width      : (1200 / 400 * 100%);
+  height     : 1px;
+  background : #000;
+  transform  : translateY(7px) translateX(-1px) rotate(-2deg);
+}
+
+/**
+ * ************************************************************************\
+ * OBJECTIF 2
+ * \*************************************************************************
+ */
+
+.objectif-2 ul {
+  position   : relative;
+  margin-top : 55px;
+}
+
+.objectif-2 ul li {
+  display       : inline-block;
+  position      : relative;
+  width         : 4%;
+  height        : 0;
+  padding-top   : 4%;
+  color         : black;
+  border        : 1px solid #000;
+  border-radius : 55%;
+  text-align    : center;
+}
+
+.objectif-2 li:nth-child(2) {
+  top         : -4px;
+  width       : 5%;
+  height      : 0;
+  padding-top : 5%;
+}
+
+.objectif-2 li:nth-child(2)::before {
+  content    : '';
+  position   : absolute;
+  top        : (200 / 550 * 100%);
+  left       : -(800 / 250 * 100%);
+  width      : (550 / 150 * 100%);
+  height     : 1px;
+  background : #000;
+  transform  : translateY(7px) translateX(-1px) rotate(-1deg);
+}
+
+.objectif-2 li:nth-child(3) {
+  top         : -10px;
+  width       : 6%;
+  height      : 0;
+  padding-top : 6%;
+}
+
+.objectif-2 li:nth-child(3)::before {
+  content    : '';
+  position   : absolute;
+  top        : (200 / 600 * 100%);
+  left       : -(1000 / 350 * 100%);
+  width      : (1100 / 325 * 100%);
+  height     : 1px;
+  background : #000;
+  transform  : translateY(8px) translateX(-1px) rotate(-1deg);
+}
+
+.objectif-2 li:nth-child(4) {
+  top         : -15px;
+  width       : 6.5%;
+  height      : 0;
+  padding-top : 6.5%;
+}
+
+.objectif-2 li:nth-child(4)::before {
+  content    : '';
+  position   : absolute;
+  top        : (300 / 900 * 100%);
+  left       : -(900 / 300 * 100%);
+  width      : (1080 / 300 * 100%);
+  height     : 1px;
+  background : #000;
+  transform  : translateY(8px) translateX(-1px) rotate(-1.5deg);
+}
+
+.objectif-2 li:last-child {
+  top         : -22px;
+  width       : 7%;
+  height      : 0;
+  padding-top : 7%;
+  background  : #5a8fa6;
+}
+
+.objectif-2 li:last-child::before {
+  content    : '';
+  position   : absolute;
+  top        : (300 / 860 * 100%);
+  left       : -(1280 / 530 * 100%);
+  width      : (1200 / 400 * 100%);
+  height     : 1px;
+  background : #000;
+  transform  : translateY(7px) translateX(-1px) rotate(-1deg);
+}
+
+/**
+ * ************************************************************************\
+ * OBJECTIF 3
+ * \*************************************************************************
+ */
+
+.objectif-3 ul {
+  position   : relative;
+  margin-top : 55px;
+}
+
+.objectif-3 ul li {
+  display       : inline-block;
+  position      : relative;
+  width         : 4%;
+  height        : 0;
+  padding-top   : 4%;
+  color         : black;
+  border        : 1px solid #000;
+  border-radius : 55%;
+  text-align    : center;
+}
+
+.objectif-3 li:nth-child(2) {
+  top         : 10px;
+  width       : 3.5%;
+  height      : 0;
+  padding-top : 3.5%;
+}
+
+.objectif-3 li:nth-child(2)::before {
+  content    : '';
+  position   : absolute;
+  top        : (200 / 1000 * 100%);
+  left       : -(1180 / 250 * 100%);
+  width      : (1280 / 250 * 100%);
+  height     : 1px;
+  background : #000;
+  transform  : translateY(7px) translateX(-1px) rotate(3deg);
+}
+
+.objectif-3 li:nth-child(3) {
+  top         : -8px;
+  width       : 5%;
+  height      : 0;
+  padding-top : 5%;
+}
+
+.objectif-3 li:nth-child(3)::before {
+  content    : '';
+  position   : absolute;
+  top        : (200 / 415 * 100%);
+  left       : -(1280 / 375 * 100%);
+  width      : (1280 / 325 * 100%);
+  height     : 1px;
+  background : #000;
+  transform  : translateY(7px) translateX(-1px) rotate(-4deg);
+}
+
+.objectif-3 li:nth-child(4) {
+  top         : -18px;
+  width       : 6%;
+  height      : 0;
+  padding-top : 6%;
+}
+
+.objectif-3 li:nth-child(4)::before {
+  content    : '';
+  position   : absolute;
+  top        : (400 / 950 * 100%);
+  left       : -(1280 / 425 * 100%);
+  width      : (1280 / 355 * 100%);
+  height     : 1px;
+  background : #000;
+  transform  : translateY(6.7px) translateX(-1px) rotate(-2deg);
+}
+
+.objectif-3 li:last-child {
+  top         : -24px;
+  width       : 7%;
+  height      : 0;
+  padding-top : 7%;
+  background  : #5a8fa6;
+}
+
+.objectif-3 li:last-child::before {
+  content    : '';
+  position   : absolute;
+  top        : (150 / 400 * 100%);
+  left       : -(1200 / 485 * 100%);
+  width      : (1200 / 400 * 100%);
+  height     : 1px;
+  background : #000;
+  transform  : translateY(7px) translateX(-1px) rotate(-1deg);
+}
+
+/**
+ * ************************************************************************\
+ * OBJECTIF 4
+ * \*************************************************************************
+ */
+
+.objectif-4 ul li {
+  position      : relative;
+  width         : 7%;
+  height        : 0;
+  padding-top   : 7%;
+  border        : 1px solid #000;
+  border-radius : 55%;
+}
+
+.objectif-4 ul li::before {
+  content    : '';
+  position   : absolute;
+  top        : (250 / 600 * 100%);
+  left       : -(700 / 300 * 100%);
+  width      : (750 / 250 * 100%);
+  height     : 1px;
+  background : #000;
+}
+
+.objectif-4 ul li:first-child::before {
+  display : none;
+}
+
+.objectif-4 ul li:last-child {
+  background : #5a8fa6;
+}
+
+/**
+ * ************************************************************************\
+ * MEDIA QUERIES
+ * \*************************************************************************
+ */
+
+@media screen
+       and (max-width : 580px) {
+  .strategy {
+    .title {
+      font-size : 20px;
+    }
 
     div.has-big-hexa {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
+      display        : flex;
+      text-align     : center;
+      flex-direction : column;
     }
 
     .infos {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
+      display         : flex;
+      align-items     : center;
+      flex-direction  : row;
+      flex-wrap       : wrap;
+      justify-content : center;
 
       p {
-        font-size: 14px;
-        text-align: center;
+        text-align : center;
+        font-size  : 14px;
 
         span {
-          color: #636363;
+          color : #636363;
         }
       }
-
     }
   }
 
   .svg-container-pilliers {
-    justify-content: center;
+    justify-content : center;
   }
 
-  .svg-container-pilliers div{
-    width:20px;
-    height:100px;
-    margin: 3px;
+  .svg-container-pilliers div {
+    width  : 20px;
+    height : 100px;
+    margin : 3px;
   }
 
   .svg-container-pilliers p {
-    color: #fff;
-    font-size: 10px;
+    color     : #fff;
+    font-size : 10px;
   }
 
-  .pillier svg, .priority svg {
-    width: 100%;
+  .pillier svg,
+  .priority svg {
+    width : 100%;
   }
 
   figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    display         : flex;
+    position        : relative;
+    align-items     : center;
+    justify-content : center;
   }
+
   figure figcaption {
-    position: absolute;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 50%;
-    line-height: 20px;
-    color: #fff;
-    font-size: 15px;
+    display   : flex;
+    position  : absolute;
+    max-width : 50%;
+    margin    : 0 auto;
+    color     : #fff;
+    flex-wrap : wrap;
+    // line-height: 20px;
   }
 
   .has-big-hexa div {
-    max-width: 100%;
+    max-width : 100%;
+  }
+  // OBJECTIF 1, 2 , 3 & 4
+
+  .objectif-1 ul,
+  .objectif-2 ul,
+  .objectif-3 ul,
+  .objectif-4 ul {
+    display         : flex;
+    position        : relative;
+    justify-content : space-around;
+    list-style-type : none;
+
+    li {
+      h1 {
+        position  : absolute;
+        top       : -48px;
+        left      : 5px;
+        color     : #000;
+        font-size : 12px !important;
+      }
+
+      span {
+        position    : absolute !important;
+        left        : 5px;
+        margin-top  : 5px;
+        padding-top : 5px;
+        text-align  : center;
+        font-size   : 12px !important;
+      }
+    }
+  }
+  /**
+  * ************************************************************************\
+  * OBJECTIF 1
+  * \*************************************************************************
+  */
+
+  .objectif-1 li:first-child {
+    h1 {
+      font-size : 15px;
+    }
+
+    span {
+      top : 30px;
+    }
+  }
+
+  .objectif-1 li:nth-child(2)::before {
+    content    : '';
+    position   : absolute;
+    top        : (100 / 850 * 100%);
+    left       : -(1280 / 325 * 100%);
+    width      : (1180 / 260 * 100%);
+    height     : 1px;
+    background : #000;
+    transform  : translateY(4px) translateX(-1px) rotate(1deg);
+  }
+
+  .objectif-1 li:nth-child(3) {
+    top         : -5px;
+    width       : 7%;
+    height      : 0;
+    padding-top : 7%;
+  }
+
+  .objectif-1 li:nth-child(3)::before {
+    content    : '';
+    position   : absolute;
+    top        : (100 / 750 * 100%);
+    left       : -(900 / 380 * 100%);
+    width      : (900 / 300 * 100%);
+    height     : 1px;
+    color      : red;
+    background : #000;
+    transform  : translateY(7px) translateX(-1px) rotate(-2deg);
+  }
+
+  .objectif-1 li:nth-child(4) {
+    top         : -12px;
+    width       : 7%;
+    height      : 0;
+    padding-top : 7%;
+  }
+
+  .objectif-1 li:nth-child(4)::before {
+    content    : '';
+    position   : absolute;
+    top        : (100 / 750 * 100%);
+    left       : -(900 / 370 * 100%);
+    width      : (900 / 280 * 100%);
+    height     : 1px;
+    color      : red;
+    background : #000;
+    transform  : translateY(10px) translateX(-1px) rotate(-4deg);
+  }
+
+  .objectif-1 li:last-child {
+    top         : -18px;
+    width       : 7%;
+    height      : 0;
+    padding-top : 7%;
+    background  : #5a8fa6;
+  }
+
+  .objectif-1 li:last-child::before {
+    content    : '';
+    position   : absolute;
+    top        : 37%;
+    left       : -(1280 / 550 * 100%);
+    width      : (1280 / 450 * 100%);
+    height     : 1px;
+    background : #000;
+    transform  : translateY(5px) translateX(-1px) rotate(-5deg);
+  }
+  /**
+  * ************************************************************************\
+  * OBJECTIF 2
+  * \*************************************************************************
+  */
+
+  .objectif-2 ul li {
+    display       : inline-block;
+    position      : relative;
+    width         : 7%;
+    height        : 0;
+    padding-top   : 7%;
+    color         : black;
+    border        : 1px solid #000;
+    border-radius : 55%;
+    text-align    : center;
+  }
+
+  .objectif-2 li:nth-child(2) {
+    top         : -4px;
+    width       : 7%;
+    height      : 0;
+    padding-top : 7%;
+  }
+
+  .objectif-2 li:nth-child(2)::before {
+    content    : '';
+    position   : absolute;
+    top        : (200 / 750 * 100%);
+    left       : -(1280 / 550 * 100%);
+    width      : (1280 / 440 * 100%);
+    height     : 1px;
+    background : #000;
+    transform  : translateY(5px) translateX(-1px) rotate(-1deg);
+  }
+
+  .objectif-2 li:nth-child(3) {
+    top         : -10px;
+    width       : 7%;
+    height      : 0;
+    padding-top : 7%;
+  }
+
+  .objectif-2 li:nth-child(3)::before {
+    content    : '';
+    position   : absolute;
+    top        : (200 / 600 * 100%);
+    left       : -(1280 / 550 * 100%);
+    width      : (1280 / 425 * 100%);
+    height     : 1px;
+    background : #000;
+    transform  : translateY(6.7px) translateX(-1px) rotate(-5deg);
+  }
+
+  .objectif-2 li:nth-child(4) {
+    top         : -15px;
+    width       : 7%;
+    height      : 0;
+    padding-top : 7%;
+  }
+
+  .objectif-2 li:nth-child(4)::before {
+    content    : '';
+    position   : absolute;
+    top        : (200 / 650 * 100%);
+    left       : -(1280 / 550 * 100%);
+    width      : (1280 / 425 * 100%);
+    height     : 1px;
+    background : #000;
+    transform  : translateY(7.5px) translateX(-1px) rotate(-3.7deg);
+  }
+
+  .objectif-2 li:last-child {
+    top         : -20px;
+    width       : 7%;
+    height      : 0;
+    padding-top : 7%;
+    background  : #5a8fa6;
+  }
+
+  .objectif-2 li:last-child::before {
+    content    : '';
+    position   : absolute;
+    top        : (250 / 750 * 100%);
+    left       : -(1280 / 540 * 100%);
+    width      : (1280 / 450 * 100%);
+    height     : 1px;
+    background : #000;
+    transform  : translateY(6.7px) translateX(-1px) rotate(-4deg);
+  }
+  /**
+  * ************************************************************************\
+  * OBJECTIF 3
+  * \*************************************************************************
+  */
+
+  .objectif-3 ul li {
+    display       : inline-block;
+    position      : relative;
+    width         : 7%;
+    height        : 0;
+    padding-top   : 7%;
+    color         : black;
+    border        : 1px solid #000;
+    border-radius : 55%;
+    text-align    : center;
+  }
+
+  .objectif-3 li:nth-child(2) {
+    top         : 4px;
+    width       : 7%;
+    height      : 0;
+    padding-top : 7%;
+  }
+
+  .objectif-3 li:nth-child(2)::before {
+    content    : '';
+    position   : absolute;
+    top        : (100 / 1050 * 100%);
+    left       : -(1280 / 550 * 100%);
+    width      : (1280 / 450 * 100%);
+    height     : 1px;
+    background : #000;
+    transform  : translateY(8px) translateX(-1px) rotate(2deg);
+  }
+
+  .objectif-3 li:nth-child(3) {
+    top         : -4px;
+    width       : 7%;
+    height      : 0;
+    padding-top : 7%;
+  }
+
+  .objectif-3 li:nth-child(3)::before {
+    content    : '';
+    position   : absolute;
+    top        : (200 / 550 * 100%);
+    left       : -(1280 / 540 * 100%);
+    width      : (1280 / 425 * 100%);
+    height     : 1px;
+    background : #000;
+    transform  : translateY(7px) translateX(-1px) rotate(-7deg);
+  }
+
+  .objectif-3 li:nth-child(4) {
+    top         : -10px;
+    width       : 7%;
+    height      : 0;
+    padding-top : 7%;
+  }
+
+  .objectif-3 li:nth-child(4)::before {
+    content    : '';
+    position   : absolute;
+    top        : (200 / 650 * 100%);
+    left       : -(1280 / 550 * 100%);
+    width      : (1280 / 425 * 100%);
+    height     : 1px;
+    background : #000;
+    transform  : translateY(7px) translateX(-1px) rotate(-6deg);
+  }
+
+  .objectif-3 li:last-child {
+    top         : -15px;
+    width       : 7%;
+    height      : 0;
+    padding-top : 7%;
+    background  : #5a8fa6;
+  }
+
+  .objectif-3 li:last-child::before {
+    content    : '';
+    position   : absolute;
+    top        : (300 / 950 * 100%);
+    left       : -(1200 / 540 * 100%);
+    width      : (1200 / 450 * 100%);
+    height     : 1px;
+    background : #000;
+    transform  : translateY(6px) translateX(-1px) rotate(-5deg);
+  }
+  /**
+  * ************************************************************************\
+  * OBJECTIF 4
+  * \*************************************************************************
+  */
+
+  .objectif-4 ul li {
+    display       : inline-block;
+    position      : relative;
+    width         : 7%;
+    height        : 0;
+    padding-top   : 7%;
+    color         : black;
+    border        : 1px solid #000;
+    border-radius : 55%;
+    text-align    : center;
   }
 }
-
-// @media screen and (min-width : 581px) and (max-width : 700px) {
-//
-// }
-//
-// @media screen and (min-width : 701px) and (max-width : 820px) {
-//
-// }
-//
-// @media screen and (min-width : 821px) and (max-width : 940px) {
-//
-// }
-//
-// @media screen and (min-width : 941px) and (max-width : 1060px) {
-//
-// }
-//
-// @media screen and (min-width : 1061px) and (max-width : 1180px) {
-//
-// }
-//
-// @media screen and (min-width : 1181px) {
-//
-// }
