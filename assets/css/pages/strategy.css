@@ -127,7 +127,7 @@ figure figcaption {
 \**************************************************************************/
 .objectif-1 ul {
   position: relative;
-  margin-top: 75px; }
+  margin-top: 50px; }
 
 .objectif-1 ul {
   width: 100%;
@@ -135,9 +135,9 @@ figure figcaption {
   padding: 1%; }
 
 .objectif-1 ul li {
-  width: 7%;
+  width: 4%;
   height: 0;
-  padding-top: 7%;
+  padding-top: 4%;
   -moz-border-radius: 55%;
   -webkit-border-radius: 50%;
   text-align: center;
@@ -162,18 +162,18 @@ figure figcaption {
 .objectif-1 li:nth-child(2)::before {
   content: '';
   position: absolute;
-  top: 43%;
-  left: -240%;
-  width: 290%;
+  top: 50%;
+  left: -421.2766%;
+  width: 480%;
   height: 1px;
   color: red;
   background: #000; }
 
 .objectif-1 li:nth-child(3) {
   top: -10px;
-  width: 7%;
+  width: 5%;
   height: 0;
-  padding-top: 7%; }
+  padding-top: 5%; }
   .objectif-1 li:nth-child(3) h1 {
     color: #000;
     position: absolute;
@@ -191,18 +191,18 @@ figure figcaption {
   content: '';
   position: absolute;
   top: 40%;
-  left: -235%;
-  width: 290%;
+  left: -336.17021%;
+  width: 450%;
   height: 1px;
   color: red;
   background: #000;
-  -webkit-transform: translateY(7px) translateX(-2px) rotate(-3deg); }
+  -webkit-transform: translateY(6px) translateX(-2px) rotate(-2deg); }
 
 .objectif-1 li:nth-child(4) {
   top: -20px;
-  width: 7%;
+  width: 6%;
   height: 0;
-  padding-top: 7%; }
+  padding-top: 6%; }
   .objectif-1 li:nth-child(4) h1 {
     color: #000;
     position: absolute;
@@ -220,12 +220,12 @@ figure figcaption {
   content: '';
   position: absolute;
   top: 40%;
-  left: -235%;
-  width: 290%;
+  left: -235.8209%;
+  width: 300%;
   height: 1px;
   color: red;
   background: #000;
-  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-3deg); }
+  -webkit-transform: translateY(6px) translateX(-1px) rotate(-2deg); }
 
 .objectif-1 li:last-child {
   top: -40px;
@@ -249,12 +249,12 @@ figure figcaption {
 .objectif-1 li:last-child::before {
   content: '';
   position: absolute;
-  top: 50%;
-  left: -232.72727%;
-  width: 284.44444%;
+  top: 51.66667%;
+  left: -244%;
+  width: 300%;
   height: 1px;
   background: #000;
-  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-5deg); }
+  -webkit-transform: translateY(7px) translateX(-1px) rotate(-2.2deg); }
 
 /**************************************************************************\
                   OBJECTIF 2
@@ -264,9 +264,9 @@ figure figcaption {
   margin-top: 75px; }
 
 .objectif-2 ul li {
-  width: 7%;
+  width: 4%;
   height: 0;
-  padding-top: 7%;
+  padding-top: 4%;
   text-align: center;
   border-radius: 55%;
   border: 1px solid #000;
@@ -301,26 +301,26 @@ figure figcaption {
   font-size: 15px; }
 
 .objectif-2 li:nth-child(2) {
-  width: 7%;
+  width: 5%;
   height: 0;
-  padding-top: 7%;
+  padding-top: 5%;
   top: -4px; }
 
 .objectif-2 li:nth-child(2)::before {
   content: '';
   position: absolute;
   top: 36.36364%;
-  left: -232.72727%;
-  width: 284.44444%;
+  left: -320%;
+  width: 366.66667%;
   height: 1px;
   background: #000;
-  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2deg); }
+  -webkit-transform: translateY(7px) translateX(-1px) rotate(-1deg); }
 
 .objectif-2 li:nth-child(3) {
   top: -10px;
-  width: 7%;
+  width: 6%;
   height: 0;
-  padding-top: 7%; }
+  padding-top: 6%; }
   .objectif-2 li:nth-child(3) h1 {
     color: #000;
     position: absolute;
@@ -338,17 +338,17 @@ figure figcaption {
   content: '';
   position: absolute;
   top: 33.33333%;
-  left: -232.72727%;
-  width: 301.17647%;
+  left: -285.71429%;
+  width: 338.46154%;
   height: 1px;
   background: #000;
-  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2.5deg); }
+  -webkit-transform: translateY(7px) translateX(-1px) rotate(-1.5deg); }
 
 .objectif-2 li:nth-child(4) {
   top: -15px;
-  width: 7%;
+  width: 6.5%;
   height: 0;
-  padding-top: 7%; }
+  padding-top: 6.5%; }
   .objectif-2 li:nth-child(4) h1 {
     color: #000;
     position: absolute;
@@ -365,15 +365,15 @@ figure figcaption {
 .objectif-2 li:nth-child(4)::before {
   content: '';
   position: absolute;
-  top: 31.57895%;
-  left: -232.72727%;
-  width: 301.17647%;
+  top: 33.33333%;
+  left: -300%;
+  width: 360%;
   height: 1px;
   background: #000;
-  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2deg); }
+  -webkit-transform: translateY(7px) translateX(-1px) rotate(-1.4deg); }
 
 .objectif-2 li:last-child {
-  top: -20px;
+  top: -22px;
   width: 7%;
   height: 0;
   padding-top: 7%;
@@ -394,12 +394,12 @@ figure figcaption {
 .objectif-2 li:last-child::before {
   content: '';
   position: absolute;
-  top: 29.41176%;
-  left: -237.03704%;
-  width: 284.44444%;
+  top: 34.88372%;
+  left: -241.50943%;
+  width: 300%;
   height: 1px;
   background: #000;
-  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2deg); }
+  -webkit-transform: translateY(7px) translateX(-1px) rotate(-1deg); }
 
 /**************************************************************************\
                   OBJECTIF 3
@@ -409,9 +409,9 @@ figure figcaption {
   margin-top: 75px; }
 
 .objectif-3 ul li {
-  width: 7%;
+  width: 4%;
   height: 0;
-  padding-top: 7%;
+  padding-top: 4%;
   text-align: center;
   border-radius: 55%;
   border: 1px solid #000;
@@ -446,26 +446,26 @@ figure figcaption {
   font-size: 15px; }
 
 .objectif-3 li:nth-child(2) {
-  width: 7%;
+  width: 3.5%;
   height: 0;
-  padding-top: 7%;
-  top: 8px; }
+  padding-top: 3.5%;
+  top: 10px; }
 
 .objectif-3 li:nth-child(2)::before {
   content: '';
   position: absolute;
-  top: 21.05263%;
-  left: -232.72727%;
-  width: 284.44444%;
+  top: 20%;
+  left: -472%;
+  width: 512%;
   height: 1px;
   background: #000;
-  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(3deg); }
+  -webkit-transform: translateY(7px) translateX(-1px) rotate(3deg); }
 
 .objectif-3 li:nth-child(3) {
   top: -8px;
-  width: 7%;
+  width: 5%;
   height: 0;
-  padding-top: 7%; }
+  padding-top: 5%; }
   .objectif-3 li:nth-child(3) h1 {
     color: #000;
     position: absolute;
@@ -482,18 +482,18 @@ figure figcaption {
 .objectif-3 li:nth-child(3)::before {
   content: '';
   position: absolute;
-  top: 44.44444%;
-  left: -237.03704%;
-  width: 301.17647%;
+  top: 48.19277%;
+  left: -341.33333%;
+  width: 393.84615%;
   height: 1px;
   background: #000;
-  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-3deg); }
+  -webkit-transform: translateY(7px) translateX(-1px) rotate(-4deg); }
 
 .objectif-3 li:nth-child(4) {
-  top: -15px;
-  width: 7%;
+  top: -18px;
+  width: 6%;
   height: 0;
-  padding-top: 7%; }
+  padding-top: 6%; }
   .objectif-3 li:nth-child(4) h1 {
     color: #000;
     position: absolute;
@@ -511,14 +511,14 @@ figure figcaption {
   content: '';
   position: absolute;
   top: 42.10526%;
-  left: -232.72727%;
-  width: 301.17647%;
+  left: -301.17647%;
+  width: 360.56338%;
   height: 1px;
   background: #000;
   -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2deg); }
 
 .objectif-3 li:last-child {
-  top: -20px;
+  top: -24px;
   width: 7%;
   height: 0;
   padding-top: 7%;
@@ -539,12 +539,12 @@ figure figcaption {
 .objectif-3 li:last-child::before {
   content: '';
   position: absolute;
-  top: 41.66667%;
-  left: -222.22222%;
-  width: 266.66667%;
+  top: 37.5%;
+  left: -247.42268%;
+  width: 300%;
   height: 1px;
   background: #000;
-  -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2deg); }
+  -webkit-transform: translateY(7px) translateX(-1px) rotate(-1deg); }
 
 /**************************************************************************\
                   OBJECTIF 4
@@ -557,12 +557,8 @@ figure figcaption {
   width: 7%;
   height: 0;
   padding-top: 7%;
-  text-align: center;
   border-radius: 55%;
   border: 1px solid #000;
-  margin: 0 1em;
-  display: inline-block;
-  color: black;
   position: relative; }
   .objectif-4 ul li h1 {
     color: #000;
@@ -580,11 +576,11 @@ figure figcaption {
 .objectif-4 ul li::before {
   content: '';
   position: absolute;
-  top: 35px;
-  left: -150px;
-  width: 252%;
   height: 1px;
-  background: #000; }
+  background: #000;
+  top: 41.66667%;
+  left: -233.33333%;
+  width: 300%; }
 
 .objectif-4 ul li:first-child::before {
   display: none; }
@@ -648,19 +644,33 @@ figure figcaption {
   .has-big-hexa div {
     max-width: 100%; }
 
+  .objectif-1 ul li h1, .objectif-2 ul li h1, .objectif-3 ul li h1, .objectif-4 ul li h1 {
+    font-size: 10px; }
+
   /**************************************************************************\
                     OBJECTIF 1
   \**************************************************************************/
+  .objectif-1 {
+    padding-bottom: 15px; }
+
+  .objectif-1 li:first-child span {
+    top: 30px; }
+
+  .objectif-1 li:nth-child(2) {
+    top: 0px; }
+    .objectif-1 li:nth-child(2) span {
+      top: 30px; }
+
   .objectif-1 li:nth-child(2)::before {
     content: '';
     position: absolute;
-    top: 21%;
-    left: -240%;
-    width: 290%;
+    top: 11.76471%;
+    left: -393.84615%;
+    width: 453.84615%;
     height: 1px;
     color: red;
     background: #000;
-    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(0deg); }
+    -webkit-transform: translateY(5px) translateX(-1px) rotate(1deg); }
 
   .objectif-1 li:nth-child(3) {
     top: -5px;
@@ -671,25 +681,24 @@ figure figcaption {
       color: #000;
       position: absolute;
       top: -48px;
-      left: 5px;
-      font-size: 15px; }
+      left: 5px; }
     .objectif-1 li:nth-child(3) span {
       color: #000;
       position: absolute;
-      top: 65px;
+      top: 35px;
       left: 5px;
       font-size: 15px; }
 
   .objectif-1 li:nth-child(3)::before {
     content: '';
     position: absolute;
-    top: 27%;
-    left: -235%;
-    width: 290%;
+    top: 13.33333%;
+    left: -236.84211%;
+    width: 300%;
     height: 1px;
     color: red;
     background: #000;
-    -webkit-transform: translateY(7px) translateX(-1px) rotate(-3.8deg); }
+    -webkit-transform: translateY(7px) translateX(-1px) rotate(-2deg); }
 
   .objectif-1 li:nth-child(4) {
     top: -12px;
@@ -700,25 +709,24 @@ figure figcaption {
       color: #000;
       position: absolute;
       top: -48px;
-      left: 10px;
-      font-size: 15px; }
+      left: 10px; }
     .objectif-1 li:nth-child(4) span {
       color: #000;
       position: absolute;
-      top: 75px;
+      top: 45px;
       left: 10px;
       font-size: 15px; }
 
   .objectif-1 li:nth-child(4)::before {
     content: '';
     position: absolute;
-    top: 32%;
-    left: -235%;
-    width: 290%;
+    top: 13.33333%;
+    left: -243.24324%;
+    width: 321.42857%;
     height: 1px;
     color: red;
     background: #000;
-    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-4.5deg); }
+    -webkit-transform: translateY(10px) translateX(-1px) rotate(-4deg); }
 
   .objectif-1 li:last-child {
     top: -22px;
@@ -729,14 +737,13 @@ figure figcaption {
     .objectif-1 li:last-child h1 {
       color: #000;
       position: absolute;
-      top: -50px;
-      left: 25px;
-      font-size: 15px; }
+      top: -45px;
+      left: 5px; }
     .objectif-1 li:last-child span {
       color: #000;
       position: absolute;
-      top: 95px;
-      left: 25px;
+      top: 55px;
+      left: 0px;
       font-size: 15px; }
 
   .objectif-1 li:last-child::before {
@@ -754,7 +761,8 @@ figure figcaption {
   \**************************************************************************/
   .objectif-2 ul {
     position: relative;
-    margin-top: 75px; }
+    margin-top: 45px;
+    padding-bottom: 25px; }
 
   .objectif-2 ul li {
     width: 7%;
@@ -776,7 +784,7 @@ figure figcaption {
     .objectif-2 ul li span {
       color: #000;
       position: absolute;
-      top: 70px;
+      top: 30px;
       left: 0;
       font-size: 15px; }
 
@@ -789,7 +797,7 @@ figure figcaption {
   .objectif-2 li:first-child span {
     color: #000;
     position: absolute;
-    top: 50px;
+    top: 35px;
     left: 0;
     font-size: 15px; }
 
@@ -798,6 +806,8 @@ figure figcaption {
     height: 0;
     padding-top: 7%;
     top: -4px; }
+    .objectif-2 li:nth-child(2) span {
+      top: 38px; }
 
   .objectif-2 li:nth-child(2)::before {
     content: '';
@@ -807,7 +817,7 @@ figure figcaption {
     width: 284.44444%;
     height: 1px;
     background: #000;
-    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-3deg); }
+    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-1deg); }
 
   .objectif-2 li:nth-child(3) {
     top: -10px;
@@ -818,13 +828,12 @@ figure figcaption {
       color: #000;
       position: absolute;
       top: -48px;
-      left: 5px;
-      font-size: 15px; }
+      left: 5px; }
     .objectif-2 li:nth-child(3) span {
       color: #000;
       position: absolute;
-      top: 80px;
-      left: 5px;
+      top: 43px;
+      left: -5px;
       font-size: 15px; }
 
   .objectif-2 li:nth-child(3)::before {
@@ -846,13 +855,12 @@ figure figcaption {
       color: #000;
       position: absolute;
       top: -48px;
-      left: 10px;
-      font-size: 15px; }
+      left: 10px; }
     .objectif-2 li:nth-child(4) span {
       color: #000;
       position: absolute;
-      top: 90px;
-      left: 10px;
+      top: 47px;
+      left: -10px;
       font-size: 15px; }
 
   .objectif-2 li:nth-child(4)::before {
@@ -863,7 +871,7 @@ figure figcaption {
     width: 301.17647%;
     height: 1px;
     background: #000;
-    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-4deg); }
+    -webkit-transform: translateY(7.5px) translateX(-1px) rotate(-3.7deg); }
 
   .objectif-2 li:last-child {
     top: -20px;
@@ -874,14 +882,13 @@ figure figcaption {
     .objectif-2 li:last-child h1 {
       color: #000;
       position: absolute;
-      top: -50px;
-      left: 25px;
-      font-size: 15px; }
+      top: -45px;
+      left: 0px; }
     .objectif-2 li:last-child span {
       color: #000;
       position: absolute;
-      top: 110px;
-      left: 25px;
+      top: 52px;
+      left: -10px;
       font-size: 15px; }
 
   .objectif-2 li:last-child::before {
@@ -899,7 +906,8 @@ figure figcaption {
   \**************************************************************************/
   .objectif-3 ul {
     position: relative;
-    margin-top: 75px; }
+    margin-top: 45px;
+    padding-bottom: 35px; }
 
   .objectif-3 ul li {
     width: 7%;
@@ -921,7 +929,7 @@ figure figcaption {
     .objectif-3 ul li span {
       color: #000;
       position: absolute;
-      top: 70px;
+      top: 40px;
       left: 0;
       font-size: 15px; }
 
@@ -934,7 +942,7 @@ figure figcaption {
   .objectif-3 li:first-child span {
     color: #000;
     position: absolute;
-    top: 50px;
+    top: 45px;
     left: 0;
     font-size: 15px; }
 
@@ -942,17 +950,17 @@ figure figcaption {
     width: 7%;
     height: 0;
     padding-top: 7%;
-    top: 6px; }
+    top: 4px; }
 
   .objectif-3 li:nth-child(2)::before {
     content: '';
     position: absolute;
-    top: 10.52632%;
+    top: 9.52381%;
     left: -232.72727%;
     width: 284.44444%;
     height: 1px;
     background: #000;
-    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(4deg); }
+    -webkit-transform: translateY(8px) translateX(-1px) rotate(4deg); }
 
   .objectif-3 li:nth-child(3) {
     top: -4px;
@@ -968,8 +976,8 @@ figure figcaption {
     .objectif-3 li:nth-child(3) span {
       color: #000;
       position: absolute;
-      top: 80px;
-      left: 5px;
+      top: 47px;
+      left: -5px;
       font-size: 15px; }
 
   .objectif-3 li:nth-child(3)::before {
@@ -996,8 +1004,8 @@ figure figcaption {
     .objectif-3 li:nth-child(4) span {
       color: #000;
       position: absolute;
-      top: 90px;
-      left: 10px;
+      top: 52px;
+      left: -5px;
       font-size: 15px; }
 
   .objectif-3 li:nth-child(4)::before {
@@ -1008,7 +1016,7 @@ figure figcaption {
     width: 301.17647%;
     height: 1px;
     background: #000;
-    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-5deg); }
+    -webkit-transform: translateY(7px) translateX(-1px) rotate(-4.25deg); }
 
   .objectif-3 li:last-child {
     top: -15px;
@@ -1020,28 +1028,54 @@ figure figcaption {
       color: #000;
       position: absolute;
       top: -50px;
-      left: 25px;
-      font-size: 15px; }
+      left: 15px; }
     .objectif-3 li:last-child span {
       color: #000;
       position: absolute;
-      top: 110px;
-      left: 25px;
+      top: 57px;
+      left: -5px;
       font-size: 15px; }
 
   .objectif-3 li:last-child::before {
     content: '';
     position: absolute;
-    top: 35.71429%;
+    top: 31.57895%;
     left: -222.22222%;
     width: 266.66667%;
     height: 1px;
     background: #000;
-    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-2deg); } }
-.boitealanoix {
-  background: red;
-  height: 0;
-  padding-top: 20.79002%;
-  width: 20.79002%; }
+    -webkit-transform: translateY(6.7px) translateX(-1px) rotate(-5deg); }
+
+  /**************************************************************************\
+                    OBJECTIF 4
+  \**************************************************************************/
+  .objectif-4 ul {
+    position: relative;
+    margin-top: 45px;
+    padding-bottom: 35px; }
+
+  .objectif-4 ul li {
+    width: 7%;
+    height: 0;
+    padding-top: 7%;
+    text-align: center;
+    border-radius: 55%;
+    border: 1px solid #000;
+    margin: 0 1em;
+    display: inline-block;
+    color: black;
+    position: relative; }
+    .objectif-4 ul li h1 {
+      color: #000;
+      position: absolute;
+      top: -48px;
+      left: 0;
+      font-size: 15px; }
+    .objectif-4 ul li span {
+      color: #000;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      font-size: 15px; } }
 
 /*# sourceMappingURL=strategy.css.map */
