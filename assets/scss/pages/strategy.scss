@@ -162,16 +162,9 @@ figure figcaption {
 \**************************************************************************/
 .objectif-1 ul {
   position:relative;
-  margin-top: 75px;
+  margin-top: 50px;
 }
 
-// .boitealanoix {
-//   background: red;
-//   // height: 200px;
-//   height: 0;
-//   padding-top: ( 200 / 962 * 100% );
-//   width: ( 200 / 962 * 100% );
-// }
 .objectif-1 ul {
   width: 100%;
   height: 50%;
@@ -179,9 +172,9 @@ figure figcaption {
 }
 
 .objectif-1 ul li {
-    width: 7%;
+    width: 4%;
     height:0;
-    padding-top: 7%;
+    padding-top: 4%;
     -moz-border-radius: 55%;
     -webkit-border-radius: 50%;
 
@@ -208,13 +201,12 @@ figure figcaption {
     font-size: 15px;
   }
 }
-
 .objectif-1 li:nth-child(2)::before {
   content: '';
   position: absolute;
-  top: 43%;
-  left: -240%;
-  width: 290%;
+  top: (200 / 400 * 100%);
+  left: -(990 / 235 * 100%);
+  width: (1080 / 225 * 100%);
   height: 1px;
   color: red;
   background: #000;
@@ -222,9 +214,9 @@ figure figcaption {
 
 .objectif-1 li:nth-child(3) {
   top: -10px;
-  width: 7%;
+  width: 5%;
   height:0;
-  padding-top: 7%;
+  padding-top: 5%;
 
   h1 {
     color: #000;
@@ -242,27 +234,26 @@ figure figcaption {
     font-size: 15px;
   }
 }
-
 .objectif-1 li:nth-child(3)::before {
   content: '';
   position: absolute;
-  top: 40%;
-  left: -235%;
-  width: 290%;
+  top: (200 / 500 * 100%);
+  left: -(790 / 235 * 100%);
+  width: (900 / 200 * 100%);
   height: 1px;
   color: red;
   background: #000;
   -webkit-transform:
-        translateY(7px)
+        translateY(6px)
         translateX(-2px)
-        rotate(-3deg);
+        rotate(-2deg);
 }
 
 .objectif-1 li:nth-child(4) {
   top: -20px;
-  width: 7%;
+  width: 6%;
   height:0;
-  padding-top: 7%;
+  padding-top: 6%;
 
   h1 {
     color: #000;
@@ -280,20 +271,19 @@ figure figcaption {
     font-size: 15px;
   }
 }
-
 .objectif-1 li:nth-child(4)::before {
   content: '';
   position: absolute;
-  top: 40%;
-  left: -235%;
-  width: 290%;
+  top: (200 / 500 * 100%);
+  left: -(790 / 335 * 100%);
+  width: (900 / 300 * 100%);
   height: 1px;
   color: red;
   background: #000;
   -webkit-transform:
-        translateY(6.7px)
+        translateY(6px)
         translateX(-1px)
-        rotate(-3deg);
+        rotate(-2deg);
 }
 
 .objectif-1 li:last-child {
@@ -319,19 +309,18 @@ figure figcaption {
     font-size: 15px;
   }
 }
-
 .objectif-1 li:last-child::before {
   content: '';
   position: absolute;
-  top: (300 / 600 * 100%);
-  left: -(1280 / 550 * 100%);
-  width: (1280 / 450 * 100%);
+  top: (310 / 600 * 100%);
+  left: -(1220 / 500 * 100%);
+  width: (1200 / 400 * 100%);
   height: 1px;
   background: #000;
   -webkit-transform:
-        translateY(6.7px)
+        translateY(7px)
         translateX(-1px)
-        rotate(-5deg);
+        rotate(-2.2deg);
 }
 /**************************************************************************\
                   OBJECTIF 2
@@ -342,9 +331,9 @@ figure figcaption {
 }
 
 .objectif-2 ul li {
-  width: 7%;
+  width: 4%;
   height:0;
-  padding-top: 7%;
+  padding-top: 4%;
   text-align: center;
   border-radius: 55%;
   border: 1px solid #000;
@@ -387,32 +376,32 @@ figure figcaption {
     font-size: 15px;
   }
 }
+
 .objectif-2 li:nth-child(2) {
-  width: 7%;
+  width: 5%;
   height:0;
-  padding-top: 7%;
+  padding-top: 5%;
   top: -4px;
 }
-
 .objectif-2 li:nth-child(2)::before {
   content: '';
   position: absolute;
   top: (200 / 550 * 100%);
-  left: -(1280 / 550 * 100%);
-  width: (1280 / 450 * 100%);
+  left: -(800 / 250 * 100%);
+  width: (550 / 150 * 100%);
   height: 1px;
   background: #000;
   -webkit-transform:
-        translateY(6.7px)
+        translateY(7px)
         translateX(-1px)
-        rotate(-2deg);
+        rotate(-1deg);
 }
 
 .objectif-2 li:nth-child(3) {
   top: -10px;
-  width: 7%;
+  width: 6%;
   height:0;
-  padding-top: 7%;
+  padding-top: 6%;
 
   h1 {
     color: #000;
@@ -430,26 +419,25 @@ figure figcaption {
     font-size: 15px;
   }
 }
-
 .objectif-2 li:nth-child(3)::before {
   content: '';
   position: absolute;
   top: (200 / 600 * 100%);
-  left: -(1280 / 550 * 100%);
-  width: (1280 / 425 * 100%);
+  left: -(1000 / 350 * 100%);
+  width: (1100 / 325 * 100%);
   height: 1px;
   background: #000;
   -webkit-transform:
-        translateY(6.7px)
+        translateY(7px)
         translateX(-1px)
-        rotate(-2.5deg);
+        rotate(-1.5deg);
 }
 
 .objectif-2 li:nth-child(4) {
   top: -15px;
-  width: 7%;
+  width: 6.5%;
   height:0;
-  padding-top: 7%;
+  padding-top: 6.5%;
 
   h1 {
     color: #000;
@@ -467,23 +455,22 @@ figure figcaption {
     font-size: 15px;
   }
 }
-
 .objectif-2 li:nth-child(4)::before {
   content: '';
   position: absolute;
-  top: (300 / 950 * 100%);
-  left: -(1280 / 550 * 100%);
-  width: (1280 / 425 * 100%);
+  top: (300 / 900 * 100%);
+  left: -(900 / 300 * 100%);
+  width: (1080 / 300 * 100%);
   height: 1px;
   background: #000;
   -webkit-transform:
-        translateY(6.7px)
+        translateY(7px)
         translateX(-1px)
-        rotate(-2deg);
+        rotate(-1.4deg);
 }
 
 .objectif-2 li:last-child {
-  top: -20px;
+  top: -22px;
   width: 7%;
   height:0;
   padding-top: 7%;
@@ -505,19 +492,18 @@ figure figcaption {
     font-size: 15px;
   }
 }
-
 .objectif-2 li:last-child::before {
   content: '';
   position: absolute;
-  top: (250 / 850 * 100%);
-  left: -(1280 / 540 * 100%);
-  width: (1280 / 450 * 100%);
+  top: (300 / 860 * 100%);
+  left: -(1280 / 530 * 100%);
+  width: (1200 / 400 * 100%);
   height: 1px;
   background: #000;
   -webkit-transform:
-        translateY(6.7px)
+        translateY(7px)
         translateX(-1px)
-        rotate(-2deg);
+        rotate(-1deg);
 }
 
 /**************************************************************************\
@@ -529,9 +515,9 @@ figure figcaption {
 }
 
 .objectif-3 ul li {
-  width: 7%;
+  width: 4%;
   height:0;
-  padding-top: 7%;
+  padding-top: 4%;
   text-align: center;
   border-radius: 55%;
   border: 1px solid #000;
@@ -575,30 +561,30 @@ figure figcaption {
 }
 
 .objectif-3 li:nth-child(2) {
-  width: 7%;
+  width: 3.5%;
   height:0;
-  padding-top: 7%;
-  top:8px;
+  padding-top: 3.5%;
+  top:10px;
 }
 .objectif-3 li:nth-child(2)::before {
   content: '';
   position: absolute;
-  top: (200 / 950 * 100%);
-  left: -(1280 / 550 * 100%);
-  width: (1280 / 450 * 100%);
+  top: (200 / 1000 * 100%);
+  left: -(1180 / 250 * 100%);
+  width: (1280 / 250 * 100%);
   height: 1px;
   background: #000;
   -webkit-transform:
-        translateY(6.7px)
+        translateY(7px)
         translateX(-1px)
         rotate(3deg);
 }
 
 .objectif-3 li:nth-child(3) {
   top: -8px;
-  width: 7%;
+  width: 5%;
   height:0;
-  padding-top: 7%;
+  padding-top: 5%;
 
   h1 {
     color: #000;
@@ -619,22 +605,22 @@ figure figcaption {
 .objectif-3 li:nth-child(3)::before {
   content: '';
   position: absolute;
-  top: (200 / 450 * 100%);
-  left: -(1280 / 540 * 100%);
-  width: (1280 / 425 * 100%);
+  top: (200 / 415 * 100%);
+  left: -(1280 / 375 * 100%);
+  width: (1280 / 325 * 100%);
   height: 1px;
   background: #000;
   -webkit-transform:
-        translateY(6.7px)
+        translateY(7px)
         translateX(-1px)
-        rotate(-3deg);
+        rotate(-4deg);
 }
 
 .objectif-3 li:nth-child(4) {
-  top: -15px;
-  width: 7%;
+  top: -18px;
+  width: 6%;
   height:0;
-  padding-top: 7%;
+  padding-top: 6%;
 
   h1 {
     color: #000;
@@ -656,8 +642,8 @@ figure figcaption {
   content: '';
   position: absolute;
   top: (400 / 950 * 100%);
-  left: -(1280 / 550 * 100%);
-  width: (1280 / 425 * 100%);
+  left: -(1280 / 425 * 100%);
+  width: (1280 / 355 * 100%);
   height: 1px;
   background: #000;
   -webkit-transform:
@@ -667,7 +653,7 @@ figure figcaption {
 }
 
 .objectif-3 li:last-child {
-  top: -20px;
+  top: -24px;
   width: 7%;
   height:0;
   padding-top: 7%;
@@ -692,15 +678,15 @@ figure figcaption {
 .objectif-3 li:last-child::before {
   content: '';
   position: absolute;
-  top: (250 / 600 * 100%);
-  left: -(1200 / 540 * 100%);
-  width: (1200 / 450 * 100%);
+  top: (150 / 400 * 100%);
+  left: -(1200 / 485 * 100%);
+  width: (1200 / 400 * 100%);
   height: 1px;
   background: #000;
   -webkit-transform:
-        translateY(6.7px)
+        translateY(7px)
         translateX(-1px)
-        rotate(-2deg);
+        rotate(-1deg);
 }
 /**************************************************************************\
                   OBJECTIF 4
@@ -714,12 +700,8 @@ figure figcaption {
   width: 7%;
   height:0;
   padding-top: 7%;
-  text-align: center;
   border-radius: 55%;
   border: 1px solid #000;
-  margin: 0 1em;
-  display: inline-block;
-  color: black;
   position: relative;
 
   h1 {
@@ -742,11 +724,12 @@ figure figcaption {
 .objectif-4 ul li::before {
   content: '';
   position: absolute;
-  top: 35px;
-  left: -150px;
-  width: 252%;
   height: 1px;
   background: #000;
+
+  top: (250 / 600 * 100%);
+  left: -(700 / 300 * 100%);
+  width: (750 / 250 * 100%);
 }
 
 .objectif-4 ul li:first-child::before {
@@ -756,6 +739,8 @@ figure figcaption {
 .objectif-4 ul li:last-child {
   background: #5a8fa6;
 }
+
+
 /**************************************************************************\
                   MEDIA QUERIES
 \**************************************************************************/
@@ -833,24 +818,45 @@ figure figcaption {
     max-width: 100%;
   }
 
-
+  .objectif-1 ul li , .objectif-2 ul li ,.objectif-3 ul li , .objectif-4 ul li {
+    h1 {
+      font-size: 10px;
+    }
+  }
   /**************************************************************************\
                     OBJECTIF 1
   \**************************************************************************/
+  .objectif-1 {
+    padding-bottom: 15px;
+  }
+
+  .objectif-1 li:first-child {
+    span {
+      top: 30px;
+    }
+  }
+
+  .objectif-1 li:nth-child(2) {
+    top: 0px;
+
+    span {
+      top: 30px;
+    }
+  }
   .objectif-1 li:nth-child(2)::before {
     content: '';
     position: absolute;
-    top: 21%;
-    left: -240%;
-    width: 290%;
+    top: (100 / 850 * 100%);
+    left: -(1280 / 325 * 100%);
+    width: (1180 / 260 * 100%);
     height: 1px;
     color: red;
     background: #000;
 
     -webkit-transform:
-          translateY(6.7px)
+          translateY(5px)
           translateX(-1px)
-          rotate(0deg);
+          rotate(1deg);
   }
 
   .objectif-1 li:nth-child(3) {
@@ -864,31 +870,29 @@ figure figcaption {
       position: absolute;
       top: -48px;
       left: 5px;
-      font-size: 15px;
     }
 
     span {
       color: #000;
       position: absolute;
-      top: 65px;
+      top: 35px;
       left: 5px;
       font-size: 15px;
     }
   }
-
   .objectif-1 li:nth-child(3)::before {
     content: '';
     position: absolute;
-    top: 27%;
-    left: -235%;
-    width: 290%;
+    top: (100 / 750 * 100%);
+    left: -(900 / 380 * 100%);
+    width: (900 / 300 * 100%);
     height: 1px;
     color: red;
     background: #000;
     -webkit-transform:
           translateY(7px)
           translateX(-1px)
-          rotate(-3.8deg);
+          rotate(-2deg);
   }
 
   .objectif-1 li:nth-child(4) {
@@ -902,31 +906,29 @@ figure figcaption {
       position: absolute;
       top: -48px;
       left: 10px;
-      font-size: 15px;
     }
 
     span {
       color: #000;
       position: absolute;
-      top: 75px;
+      top: 45px;
       left: 10px;
       font-size: 15px;
     }
   }
-
   .objectif-1 li:nth-child(4)::before {
     content: '';
     position: absolute;
-    top: 32%;
-    left: -235%;
-    width: 290%;
+    top: (100 / 750 * 100%);
+    left: -(900 / 370 * 100%);
+    width: (900 / 280 * 100%);
     height: 1px;
     color: red;
     background: #000;
     -webkit-transform:
-          translateY(6.7px)
+          translateY(10px)
           translateX(-1px)
-          rotate(-4.5deg);
+          rotate(-4deg);
   }
 
   .objectif-1 li:last-child {
@@ -939,20 +941,18 @@ figure figcaption {
     h1 {
       color: #000;
       position: absolute;
-      top: -50px;
-      left: 25px;
-      font-size: 15px;
+      top: -45px;
+      left: 5px;
     }
 
     span {
       color: #000;
       position: absolute;
-      top: 95px;
-      left: 25px;
+      top: 55px;
+      left: 0px;
       font-size: 15px;
     }
   }
-
   .objectif-1 li:last-child::before {
     content: '';
     position: absolute;
@@ -972,7 +972,8 @@ figure figcaption {
   \**************************************************************************/
   .objectif-2 ul {
     position:relative;
-    margin-top: 75px;
+    margin-top: 45px;
+    padding-bottom: 25px;
   }
 
   .objectif-2 ul li {
@@ -998,12 +999,11 @@ figure figcaption {
     span {
       color: #000;
       position: absolute;
-      top: 70px;
+      top: 30px;
       left: 0;
       font-size: 15px;
     }
   }
-
   .objectif-2 li:first-child {
     h1 {
       color: #000;
@@ -1016,18 +1016,22 @@ figure figcaption {
     span {
       color: #000;
       position: absolute;
-      top: 50px;
+      top: 35px;
       left: 0;
       font-size: 15px;
     }
   }
+
   .objectif-2 li:nth-child(2) {
     width: 7%;
     height:0;
     padding-top: 7%;
     top: -4px;
-  }
 
+    span {
+      top: 38px;
+    }
+  }
   .objectif-2 li:nth-child(2)::before {
     content: '';
     position: absolute;
@@ -1039,7 +1043,7 @@ figure figcaption {
     -webkit-transform:
           translateY(6.7px)
           translateX(-1px)
-          rotate(-3deg);
+          rotate(-1deg);
   }
 
   .objectif-2 li:nth-child(3) {
@@ -1053,18 +1057,16 @@ figure figcaption {
       position: absolute;
       top: -48px;
       left: 5px;
-      font-size: 15px;
     }
 
     span {
       color: #000;
       position: absolute;
-      top: 80px;
-      left: 5px;
+      top: 43px;
+      left: -5px;
       font-size: 15px;
     }
   }
-
   .objectif-2 li:nth-child(3)::before {
     content: '';
     position: absolute;
@@ -1090,18 +1092,16 @@ figure figcaption {
       position: absolute;
       top: -48px;
       left: 10px;
-      font-size: 15px;
     }
 
     span {
       color: #000;
       position: absolute;
-      top: 90px;
-      left: 10px;
+      top: 47px;
+      left: -10px;
       font-size: 15px;
     }
   }
-
   .objectif-2 li:nth-child(4)::before {
     content: '';
     position: absolute;
@@ -1111,9 +1111,9 @@ figure figcaption {
     height: 1px;
     background: #000;
     -webkit-transform:
-          translateY(6.7px)
+          translateY(7.5px)
           translateX(-1px)
-          rotate(-4deg);
+          rotate(-3.7deg);
   }
 
   .objectif-2 li:last-child {
@@ -1126,20 +1126,18 @@ figure figcaption {
     h1 {
       color: #000;
       position: absolute;
-      top: -50px;
-      left: 25px;
-      font-size: 15px;
+      top: -45px;
+      left: 0px;
     }
 
     span {
       color: #000;
       position: absolute;
-      top: 110px;
-      left: 25px;
+      top: 52px;
+      left: -10px;
       font-size: 15px;
     }
   }
-
   .objectif-2 li:last-child::before {
     content: '';
     position: absolute;
@@ -1159,7 +1157,8 @@ figure figcaption {
   \**************************************************************************/
   .objectif-3 ul {
     position:relative;
-    margin-top: 75px;
+    margin-top: 45px;
+    padding-bottom: 35px;
   }
 
   .objectif-3 ul li {
@@ -1185,7 +1184,7 @@ figure figcaption {
     span {
       color: #000;
       position: absolute;
-      top: 70px;
+      top: 40px;
       left: 0;
       font-size: 15px;
     }
@@ -1202,7 +1201,7 @@ figure figcaption {
     span {
       color: #000;
       position: absolute;
-      top: 50px;
+      top: 45px;
       left: 0;
       font-size: 15px;
     }
@@ -1212,18 +1211,18 @@ figure figcaption {
     width: 7%;
     height:0;
     padding-top: 7%;
-    top:6px;
+    top:4px;
   }
   .objectif-3 li:nth-child(2)::before {
     content: '';
     position: absolute;
-    top: (100 / 950 * 100%);
+    top: (100 / 1050 * 100%);
     left: -(1280 / 550 * 100%);
     width: (1280 / 450 * 100%);
     height: 1px;
     background: #000;
     -webkit-transform:
-          translateY(6.7px)
+          translateY(8px)
           translateX(-1px)
           rotate(4deg);
   }
@@ -1245,8 +1244,8 @@ figure figcaption {
     span {
       color: #000;
       position: absolute;
-      top: 80px;
-      left: 5px;
+      top: 47px;
+      left: -5px;
       font-size: 15px;
     }
   }
@@ -1281,8 +1280,8 @@ figure figcaption {
     span {
       color: #000;
       position: absolute;
-      top: 90px;
-      left: 10px;
+      top: 52px;
+      left: -5px;
       font-size: 15px;
     }
   }
@@ -1295,9 +1294,9 @@ figure figcaption {
     height: 1px;
     background: #000;
     -webkit-transform:
-          translateY(6.7px)
+          translateY(7px)
           translateX(-1px)
-          rotate(-5deg);
+          rotate(-4.25deg);
   }
 
   .objectif-3 li:last-child {
@@ -1311,22 +1310,21 @@ figure figcaption {
       color: #000;
       position: absolute;
       top: -50px;
-      left: 25px;
-      font-size: 15px;
+      left: 15px;
     }
 
     span {
       color: #000;
       position: absolute;
-      top: 110px;
-      left: 25px;
+      top: 57px;
+      left: -5px;
       font-size: 15px;
     }
   }
   .objectif-3 li:last-child::before {
     content: '';
     position: absolute;
-    top: (250 / 700 * 100%);
+    top: (300 / 950 * 100%);
     left: -(1200 / 540 * 100%);
     width: (1200 / 450 * 100%);
     height: 1px;
@@ -1334,16 +1332,45 @@ figure figcaption {
     -webkit-transform:
           translateY(6.7px)
           translateX(-1px)
-          rotate(-2deg);
+          rotate(-5deg);
   }
-}
 
+  /**************************************************************************\
+                    OBJECTIF 4
+  \**************************************************************************/
+  .objectif-4 ul {
+    position:relative;
+    margin-top: 45px;
+    padding-bottom: 35px;
+  }
 
+  .objectif-4 ul li {
+    width: 7%;
+    height:0;
+    padding-top: 7%;
+    text-align: center;
+    border-radius: 55%;
+    border: 1px solid #000;
+    margin: 0 1em;
+    display: inline-block;
+    color: black;
+    position: relative;
 
-.boitealanoix {
-  background: red;
-  // height: 200px;
-  height: 0;
-  padding-top: ( 200 / 962 * 100% );
-  width: ( 200 / 962 * 100% );
+    h1 {
+      color: #000;
+      position: absolute;
+      top: -48px;
+      left: 0;
+      font-size: 15px;
+    }
+
+    span {
+      color: #000;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      font-size: 15px;
+    }
+  }
+
 }
