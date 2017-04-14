@@ -217,12 +217,12 @@ figure figcaption {
   content: '';
   position: absolute;
   top: 40%;
-  left: -235.8209%;
-  width: 300%;
+  left: -239.39394%;
+  width: 310.34483%;
   height: 1px;
   color: red;
   background: #000;
-  -webkit-transform: translateY(6px) translateX(-1px) rotate(-2deg); }
+  -webkit-transform: translateY(6px) translateX(-1px) rotate(-2.7deg); }
 
 .objectif-1 li:last-child {
   top: -40px;
@@ -339,7 +339,7 @@ figure figcaption {
   width: 338.46154%;
   height: 1px;
   background: #000;
-  -webkit-transform: translateY(7px) translateX(-1px) rotate(-1.5deg); }
+  -webkit-transform: translateY(8px) translateX(-1px) rotate(-1deg); }
 
 .objectif-2 li:nth-child(4) {
   top: -15px;
