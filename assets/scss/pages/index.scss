@@ -17,102 +17,76 @@ body
 /** HEADER **/
 header {
     background-color: #fff;
+    display: block;
 }
+
+.logo {
+  display: block; }
+
+.regards {
+  position: absolute;
+  font-weight: 700;
+  right: 0;
+  width: 73px;
+  margin-top: -45px;
+  line-height: 0.882;
+  text-align: center;
+
+  .textR {
+    font-weight: lighter;;
+    display: block;
+  }
+
+}
+
+.regards span {
+  }
+
 
 ul
 {
   margin-left: -41px;
 }
-/*** BARRE D'INFO **/
 
-.barInfo {
-  background-color: #0d2e86;
+.content {
   display: block;
-  padding: 10px;
-  color: white;
 
-  p {
-    width: 80%;
-  }
-
-  .closeButton {
-    display: block;
-    right: 10px;
-    margin-left: 20px;
-    margin-top: 9px;
-    transform: translateY(-50%);
-    width: 33px;
-    float: right;
-
-    .cercle {
-      position: absolute;
-      margin-left: 45px;
-      margin-top: -45px;
-    }
-    .croix {
-      left: 64px;
-      position: absolute;
-      top: -27%;
-      transform: translate(34%, -137%);
-      // left: 94%;
-      // position: absolute;
-      // top: 46%;
-      // transform: translate( -50%, -50% );
-    }
-
-    input {
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate( -50%, -50% );
-    }
-
-    &:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
+  .titreHEAD {
+    font-size: 17.715px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.05;
+    text-align: left;
+    -moz-transform: matrix(2.25798, 0, 0, 2.25798, 0, 0);
+    -webkit-transform: matrix(2.25798, 0, 0, 2.25798, 0, 0);
+    -ms-transform: matrix(2.25798, 0, 0, 2.25798, 0, 0);
+    position: absolute;
+    left: 250.218px;
+    top: 97.126px;
+    width: 101.253px;
+    height: 49.982px;
+    z-index: 47;
   }
 }
 
 
- .menu {
-   padding: 10px;
 
-   display: flex;
+/*** MOBILE **/
+.barInfo {
+  display: none;
+}
+
+ .menu {
+   padding: 1%;
+   display: block;
+   height: 44px;
 
  }
 
  nav {
-   position: absolute;
-   left: 0;
-   right: 0;
-   margin-top: 27px;
-   display: inline-block;;
+   display: none;
  }
 
-/** MENU **/
-.logo
-{
-   display: block;
-   width: 60%;
-   margin-left: 22%;
-   margin-right: 8%;
-}
-
-.regards
-{
-  display: inline-block;
-  font-weight: 700;
-  font-size: 46px;
-  color: black;
-  width: 28%;
-  text-align: center;
-}
-
-.regards span {
-  color: #e79655;
-}
 
 
 /** BURGER **/
@@ -153,43 +127,29 @@ ul
     opacity: 1;
 }
 
-.menu-toggler__label__visual span:nth-child(1){
-    top: 5px;
-    margin-bottom: 3px;
-}
 
-.menu-toggler__label__visual span:nth-child(2) {
-    top: 50%;
-    margin-top: -4px;
-
-}
-
-.menu-toggler__label__visual span:nth-child(3) {
-    bottom: 5px;
-    margin-bottom: 3px;
-}
-
-.menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual span:nth-child(1) {
-    transform: rotate(45deg);
-    top: 19px;
-}
-
-.menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual span:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual span:nth-child(3) {
-    transform: rotate(-45deg);
-    bottom: 19px;
-}
+// .menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual svg:nth-child(1) {
+//     transform: rotate(45deg);
+//     top: 19px;
+// }
+//
+// .menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual svg:nth-child(2) {
+//     opacity: 0;
+// }
+//
+// .menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual svg:nth-child(3) {
+//     transform: rotate(-45deg);
+//     bottom: 19px;
+// }
 
 
 
 
 .main-menu {
+    display: none;
     position: absolute;
     list-style-type: none;
-    top: 44px;
+    top: 60px;
     left: 0;
     right: 0;
     margin: 0;
@@ -230,51 +190,63 @@ ul
 .main-menu a:hover,
 .main-menu a:focus,
 .main-menu a:active {
-    background-color: #17a0b5;
+  background-color: #0d2e86;
 }
 
 /** CONTENU **/
 #bg
 {
-  position: relative;
   background-image: url("../../img/home/axa_hopwork_070.jpg");
-  z-index: 1000;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  display: flex;
+  margin:0;
+  padding:0;
+  -webkit-background-size: cover;
 
+}
 
-  .polygon {
+.polygon {
     list-style: none;
     margin: auto;
-    position: absolute;
-    width: 400px;
-    left:50%;
-      transform: translate( -50%, -50% );
-    top: 13px;
-      >li {
-        position: absolute;
+    display: block;
+}
 
-    }
+.polygon li {
+  position: absolute;
+
+  svg {
+    width: 218px;
+    height: 252px;
   }
 }
 
+.polygonSVG {
+  fill: #292929;
+  fill-opacity: 0.25;
+  stroke: #fff;
+  stroke-width: 2.031px;
+  fill-rule: evenodd;
+}
+
+
+
 .contentSVG
 {
+  transform:rotate(29deg);
+  display: block;
   p {
     font-size: 18px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.333;
     text-align: center;
-    -moz-transform: matrix( 1.27781599054484,0,0,1.28057249974642,0,0);
-    -webkit-transform: matrix( 1.27781599054484,0,0,1.28057249974642,0,0);
-    -ms-transform: matrix( 1.27781599054484,0,0,1.28057249974642,0,0);
     position: absolute;
     left: 30%;
     top: 100px;
     z-index: 34;
+    transform: rotate(-29deg);
+
   }
 
   #polygone3{
@@ -285,53 +257,333 @@ ul
 
 .polygon li:nth-child(1)
 {
-  left: 1px;
-  top: 47px;
+  left: 291px;
+  top: 208px;
+}
+
+.polygon li:nth-child(1) p
+{
+  left: 35px;
 
 }
+
 .polygon li:nth-child(2)
 {
-  left: 0;
-  top: 324px;
+
+  left: 387px;
+  top: 369px;
+
+}
+.polygon li:nth-child(2) p
+{
+left: 35px;
 
 }
 .polygon li:nth-child(3)
 {
-  left: 241px;
-  top: 186px;
+
+  left: 479px;
+  top: 205px;
 }
 
 .polygon li:nth-child(3) p
 {
-  left: 30%;
-  width: 136px;
+  left: 7px;
+  top: 91px;
 
 }
 
 .polygon li:nth-child(4)
 {
-  left: 240px;
-  top: 463px;
+  left: 667px;
+  top: 202px;
+
+}
+.polygon li:nth-child(4) p
+{
+  left: 51px;
+  top: 91px;
 
 }
 
-.polygon li svg:hover #polygone1 {
+.polygon li:nth-child(5)
+{
+  left: 764px;
+  top: 364px;
+
+}
+.polygon li:nth-child(5) p
+{
+  left: 24px;
+  top: 91px;
+
+}
+
+.polygon li:nth-child(6)
+{
+  left: 576px;
+  top: 367px;
+}
+.polygon li:nth-child(6) p
+{
+  left: 51px;
+  top: 91px;
+
+
+}
+
+.polygon li svg:hover #Polygone1 {
   fill: blue; }
-.polygon li svg:hover #polygone2 {
+.polygon li svg:hover #Polygone2 {
   fill: red; }
-.polygon li svg:hover #polygone3 {
+.polygon li svg:hover #Polygone3 {
   fill: orange; }
-.polygon li svg:hover #polygone4 {
+.polygon li svg:hover #Polygone4 {
   fill: green; }
-.polygon li svg:hover #polygone5 {
+.polygon li svg:hover #Polygone5 {
   fill: pink; }
-.polygon li svg:hover #polygone6 {
+.polygon li svg:hover #Polygone6 {
   fill: yellow; }
 
 
+footer {
+  position: absolute;
+  display: block;
+  bottom:0;
+  padding: 8px;
+  background-color: black;
+  .share {
+    display: none;
+  }
 
+}
   /** RESPONSIVE **/
 
   @media screen and (max-width : 580px) {
-    
+
+    /** HEADER **/
+
+    /*** BARRE D'INFO **/
+
+    .barInfo {
+      background-color: #0d2e86;
+      display: block;
+      padding: 3%;
+      color: white;
+
+      p {
+        font-size: 9px;
+        width: 74%;
+      }
+
+      .closeButton {
+        display: block;
+        right: 10px;
+        margin-left: 20px;
+        margin-top: 9px;
+        transform: translateY(-50%);
+        width: 33px;
+        float: right;
+
+        .cercle {
+          position: absolute;
+          margin-left: 50px;
+          margin-top: -40px;
+          width: 51px;
+          height: 51px;
+        }
+        .croix {
+          left: 64px;
+          position: absolute;
+          top: -27%;
+          transform: translate(34%, -137%);
+          // left: 94%;
+          // position: absolute;
+          // top: 46%;
+          // transform: translate( -50%, -50% );
+        }
+
+        input {
+          left: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translate( -50%, -50% );
+        }
+
+        &:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+      }
+    }
+
+    .cls-1 {
+      fill: #818181;
+      fill-opacity: 0;
+      stroke: #284591;
+      stroke-linejoin: round;
+      stroke-width: 4px;
+      opacity: 1.102;
+    }
+
+    nav{
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+
+    .logo {
+      position: absolute;
+      left: 88px;
+      top: 86px;
+
+        img {
+          width: 76%;
+        }
+
+    }
+
+
+    .polygon {
+      margin: auto;
+      position: relative;
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      li {
+        top: 2px;
+
+      }
+
+    }
+
+    .polygonSVG {
+      transform:translate(-278.046 -395.359);
+    }
+
+    #Polygone5,#Polygone6 {
+      display: none;
+
+      .contentSVG p {
+        display: none
+      }
+    }
+    .menu {
+    padding: 2%;
+    display: block;
+    height: 52px;
+
+
+
+  }
+
+    .regards {
+    position: absolute;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    right: 9px;
+    top: 140px;
+    text-align: center;
+
+    .textR {
+      display: none;
+    }
+
+
+  }
+
+  .content {
+    display: block;
+
+    .titreHEAD {
+      display: none;
+    }
+  }
+
+    .polygon li:nth-child(1)
+    {
+      left: 25px;
+      top: 30px;
+    }
+    .polygon li:nth-child(2)
+    {
+      left: 25px;
+      top: 188px;
+
+    }
+    .polygon li:nth-child(3)
+    {
+      left: 163px;
+      top: 109px;
+    }
+
+    .polygon li:nth-child(3) p
+    {
+      left: 28px;
+      width: 136px;
+
+    }
+
+    .polygon li {
+      svg {
+        width: 185px;
+        height: 160px;
+      }
+    }
+
+    .polygon li:nth-child(4)
+    {
+      left: 162px;
+      top: 268px;
+
+    }
+
+    /**  CONTENT **/
+
+    #bg {
+      height: 100vh;
+      background-position: (17%, 50%);
+      // background-image: url("../../img/home/axa_hopwork_070-mobile.png");
+    }
+
+    .contentSVG {
+        transform:rotate(0deg);
+        display: block;
+      p {
+        font-size: 12px;
+        color: white;
+        font-weight: bold;
+        line-height: 1.333;
+        text-align: center;
+        position: absolute;
+        left: 28%;
+        top: 36%;
+        z-index: 34;
+        -moz-transform: matrix( 1.27781599054484,0,0,1.28057249974642,0,0);
+        -webkit-transform: matrix( 1.27781599054484,0,0,1.28057249974642,0,0);
+        -ms-transform: matrix( 1.27781599054484,0,0,1.28057249974642,0,0);
+    }
+  }
+
+    footer {
+      position: fixed;
+      display: block;
+      bottom:0;
+      padding: 8px;
+      background-color: black;
+      .share {
+        display: block;
+        position: fixed;
+      }
+
+    }
+
+
   }
