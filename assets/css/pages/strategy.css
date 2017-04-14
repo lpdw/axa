@@ -120,7 +120,9 @@ figure figcaption {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
-  position: relative; }
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto; }
 
 /**************************************************************************\
                   OBJECTIF 1
@@ -128,11 +130,6 @@ figure figcaption {
 .objectif-1 ul {
   position: relative;
   margin-top: 50px; }
-
-.objectif-1 ul {
-  width: 100%;
-  height: 50%;
-  padding: 1%; }
 
 .objectif-1 ul li {
   width: 4%;
@@ -644,20 +641,29 @@ figure figcaption {
   .has-big-hexa div {
     max-width: 100%; }
 
+  .objectif-1 ul, .objectif-2 ul, .objectif-3 ul, .objectif-4 ul {
+    margin-bottom: 20px; }
+
   .objectif-1 ul li h1, .objectif-2 ul li h1, .objectif-3 ul li h1, .objectif-4 ul li h1 {
-    font-size: 10px; }
+    font-size: 12px !important; }
+  .objectif-1 ul li span, .objectif-2 ul li span, .objectif-3 ul li span, .objectif-4 ul li span {
+    font-size: 12px !important; }
 
   /**************************************************************************\
                     OBJECTIF 1
   \**************************************************************************/
-  .objectif-1 {
+  .objectif-1 ul {
     padding-bottom: 15px; }
 
+  .objectif-1 li:first-child h1 {
+    font-size: 15px; }
   .objectif-1 li:first-child span {
     top: 30px; }
 
   .objectif-1 li:nth-child(2) {
     top: 0px; }
+    .objectif-1 li:nth-child(2) h1 {
+      font-size: 15px; }
     .objectif-1 li:nth-child(2) span {
       top: 30px; }
 

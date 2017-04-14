@@ -155,6 +155,8 @@ figure figcaption {
   list-style-type: none;
   justify-content: space-around;
   position: relative;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /**************************************************************************\
@@ -163,12 +165,6 @@ figure figcaption {
 .objectif-1 ul {
   position:relative;
   margin-top: 50px;
-}
-
-.objectif-1 ul {
-  width: 100%;
-  height: 50%;
-  padding: 1%;
 }
 
 .objectif-1 ul li {
@@ -739,8 +735,6 @@ figure figcaption {
 .objectif-4 ul li:last-child {
   background: #5a8fa6;
 }
-
-
 /**************************************************************************\
                   MEDIA QUERIES
 \**************************************************************************/
@@ -818,19 +812,30 @@ figure figcaption {
     max-width: 100%;
   }
 
+  .objectif-1 ul, .objectif-2 ul, .objectif-3 ul, .objectif-4 ul {
+      margin-bottom: 20px;
+  }
+
   .objectif-1 ul li , .objectif-2 ul li ,.objectif-3 ul li , .objectif-4 ul li {
     h1 {
-      font-size: 10px;
+      font-size: 12px !important;
+    }
+
+    span {
+      font-size: 12px !important;
     }
   }
   /**************************************************************************\
                     OBJECTIF 1
   \**************************************************************************/
-  .objectif-1 {
+  .objectif-1 ul {
     padding-bottom: 15px;
   }
 
   .objectif-1 li:first-child {
+    h1 {
+      font-size: 15px;
+    }
     span {
       top: 30px;
     }
@@ -838,7 +843,9 @@ figure figcaption {
 
   .objectif-1 li:nth-child(2) {
     top: 0px;
-
+    h1 {
+      font-size: 15px;
+    }
     span {
       top: 30px;
     }
