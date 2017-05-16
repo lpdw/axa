@@ -1,8 +1,436 @@
-body,
-html {
+@font-face {
+  font-family: 'ITCAvantGarde';
+  src: url("../fonts/itc-avant-garde.otf"); }
+html,
+body {
+  margin: auto;
+  font-family: 'ITCAvantGarde';
   background-color: #f8f8f8;
-  font-family: Verdana, sans-serif; }
+  font-size: 14px; }
 
+/** HEADER **/
+header {
+  background-color: #fff;
+  display: block; }
+
+.logo {
+  display: block; }
+
+.regards {
+  position: absolute;
+  font-weight: 700;
+  right: 0;
+  font-size: 20px;
+  width: 73px;
+  margin-top: -45px;
+  line-height: 0.882;
+  text-align: center; }
+  .regards .textR {
+    font-weight: lighter;
+    display: block; }
+  .regards .textR2 {
+    font-size: 14px;
+    font-weight: bold;
+    display: block; }
+
+.regards2 span {
+  color: #e79655; }
+
+.regards span {
+  color: black; }
+
+ul {
+  margin-left: -41px; }
+
+.content {
+  display: block; }
+  .content .titreHEAD {
+    font-size: 17.715px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.05;
+    text-align: left;
+    -moz-transform: matrix(2.25798, 0, 0, 2.25798, 0, 0);
+    -webkit-transform: matrix(2.25798, 0, 0, 2.25798, 0, 0);
+    -ms-transform: matrix(2.25798, 0, 0, 2.25798, 0, 0);
+    position: absolute;
+    left: 218.218px;
+    top: 97.126px;
+    width: 101.253px;
+    height: 49.982px;
+    z-index: 47; }
+
+/*** MOBILE **/
+.barInfo {
+  display: none; }
+
+.menu {
+  padding: 1%;
+  display: block;
+  height: 50px; }
+
+nav {
+  display: none; }
+
+/** BURGER **/
+.menu-toggler {
+  display: none; }
+
+.menu-toggler__label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  bottom: 0;
+  width: 44px;
+  height: 100%; }
+
+.menu-toggler__label:hover,
+.menu-toggler__label:focus,
+.menu-toggler__label:active {
+  cursor: pointer; }
+
+.menu-toggler__label__text {
+  position: absolute;
+  text-indent: -9999px; }
+
+.menu-toggler__label__visual span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: black;
+  transition: transform .5s, top .5s, bottom .5s, opacity .2s;
+  opacity: 1; }
+
+.main-menu {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  top: 60px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding-left: 0;
+  display: none; }
+
+.menu-toggler:checked ~ .main-menu {
+  display: block; }
+
+.main-menu li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #fff; }
+
+.main-menu a {
+  display: block;
+  line-height: 44px;
+  padding: 0 .7em; }
+
+.main-menu a,
+.main-menu a:visited,
+.main-menu a:hover,
+.main-menu a:focus,
+.main-menu a:active {
+  text-decoration: none;
+  color: #fff; }
+
+.main-menu a,
+.main-menu a:visited {
+  background-color: #0d2e86; }
+
+.main-menu a:hover,
+.main-menu a:focus,
+.main-menu a:active {
+  background-color: #0d2e86; }
+
+/** CONTENU **/
+#bgIndex {
+  background-image: url("../img/home/axa_hopwork_070.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  -webkit-background-size: cover; }
+
+.polygon {
+  list-style: none;
+  margin: auto;
+  display: block; }
+
+.polygon li {
+  position: absolute; }
+  .polygon li svg {
+    width: 236px;
+    height: 252px; }
+
+.polygonSVG {
+  fill: #292929;
+  fill-opacity: 0.25;
+  stroke: #fff;
+  stroke-width: 2.031px;
+  fill-rule: evenodd; }
+
+.contentSVG {
+  transform: rotate(29deg);
+  display: block; }
+  .contentSVG p {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.333;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    top: 100px;
+    z-index: 34;
+    transform: rotate(-29deg); }
+  .contentSVG #polygone3 {
+    left: 50%; }
+
+.polygon li:nth-child(1) {
+  left: 219px;
+  top: 208px; }
+
+.polygon li:nth-child(1) p {
+  left: 47px; }
+
+.polygon li:nth-child(2) {
+  left: 325px;
+  top: 382px; }
+
+.polygon li:nth-child(2) p {
+  left: 59px;
+  top: 91px; }
+
+.polygon li:nth-child(3) {
+  left: 422px;
+  top: 205px; }
+
+.polygon li:nth-child(3) p {
+  left: 71px;
+  top: 91px; }
+
+.polygon li:nth-child(4) {
+  left: 625px;
+  top: 202px; }
+
+.polygon li:nth-child(4) p {
+  left: 63px;
+  top: 102px; }
+
+.polygon li:nth-child(5) {
+  left: 730px;
+  top: 376px; }
+
+.polygon li:nth-child(5) p {
+  left: 58px;
+  top: 90px; }
+
+.polygon li:nth-child(6) {
+  left: 527px;
+  top: 380px; }
+
+.polygon li:nth-child(6) p {
+  left: 56px;
+  top: 91px; }
+
+.polygon li svg:hover #Polygone1 {
+  fill: blue; }
+
+.polygon li svg:hover #Polygone2 {
+  fill: red; }
+
+.polygon li svg:hover #Polygone3 {
+  fill: orange; }
+
+.polygon li svg:hover #Polygone4 {
+  fill: green; }
+
+.polygon li svg:hover #Polygone5 {
+  fill: pink; }
+
+.polygon li svg:hover #Polygone6 {
+  fill: yellow; }
+
+footer {
+  position: fixed;
+  display: block;
+  bottom: 0;
+  padding: 8px;
+  background-color: black; }
+  footer .share {
+    display: block;
+    position: fixed; }
+
+/** RESPONSIVE **/
+@media screen and (max-width: 580px) {
+  /** HEADER **/
+  /*** BARRE D'INFO **/
+  .barInfo {
+    background-color: #0d2e86;
+    display: block;
+    padding: 3%;
+    color: white; }
+    .barInfo p {
+      font-size: 9px;
+      width: 74%; }
+    .barInfo .closeButton {
+      display: block;
+      right: 10px;
+      margin-left: 20px;
+      margin-top: 9px;
+      transform: translateY(-50%);
+      width: 33px;
+      float: right; }
+      .barInfo .closeButton .cercle {
+        position: absolute;
+        margin-left: 50px;
+        margin-top: -40px;
+        width: 51px;
+        height: 51px; }
+      .barInfo .closeButton .croix {
+        left: 64px;
+        position: absolute;
+        top: -27%;
+        transform: translate(34%, -137%); }
+      .barInfo .closeButton input {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+      .barInfo .closeButton:after {
+        content: "";
+        display: table;
+        clear: both; }
+
+  .cls-1 {
+    fill: #818181;
+    fill-opacity: 0;
+    stroke: #284591;
+    stroke-linejoin: round;
+    stroke-width: 4px;
+    opacity: 1.102; }
+
+  nav {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0; }
+
+  .logo {
+    position: absolute;
+    left: 67px;
+    top: 86px; }
+    .logo img {
+      margin: -2px;
+      width: 72%;
+      margin-left: 41px; }
+
+  .polygon {
+    margin: auto;
+    position: absolute; }
+    .polygon:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .polygon li {
+      top: 2px; }
+
+  .polygonSVG {
+    transform: translate(-278.046 -395.359); }
+
+  #Polygone5, #Polygone6 {
+    display: none; }
+    #Polygone5 .contentSVG p, #Polygone6 .contentSVG p {
+      display: none; }
+
+  .menu {
+    padding: 2%;
+    display: block;
+    height: 52px; }
+
+  .regards {
+    position: absolute;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    right: 7px;
+    top: 145px;
+    text-align: center; }
+    .regards .textR2 {
+      display: none; }
+
+  .content {
+    display: block; }
+    .content .titreHEAD {
+      display: none; }
+
+  .polygon li:nth-child(1) {
+    left: 25px;
+    top: 30px; }
+
+  .polygon li:nth-child(2) {
+    left: 25px;
+    top: 188px; }
+
+  .polygon li:nth-child(2) p {
+    left: 59px;
+    top: 58px; }
+
+  .polygon li:nth-child(3) {
+    left: 163px;
+    top: 109px; }
+
+  .polygon li:nth-child(3) p {
+    left: 28px;
+    width: 136px;
+    top: 58px; }
+
+  .polygon li:nth-child(4) p {
+    left: 51px;
+    top: 58px; }
+
+  .polygon li svg {
+    width: 185px;
+    height: 160px; }
+
+  .polygon li:nth-child(4) {
+    left: 162px;
+    top: 268px; }
+
+  /**  CONTENT **/
+  #bgIndex {
+    height: 100vh;
+    background-position: 17%, 50%; }
+
+  .contentSVG {
+    transform: rotate(0deg);
+    display: block; }
+    .contentSVG p {
+      font-size: 12px;
+      color: white;
+      font-weight: bold;
+      line-height: 1.333;
+      text-align: center;
+      position: absolute;
+      left: 28%;
+      top: 36%;
+      z-index: 34;
+      -moz-transform: matrix(1.27782, 0, 0, 1.28057, 0, 0);
+      -webkit-transform: matrix(1.27782, 0, 0, 1.28057, 0, 0);
+      -ms-transform: matrix(1.27782, 0, 0, 1.28057, 0, 0); }
+
+  footer {
+    position: fixed;
+    display: block;
+    top: 604px;
+    padding: 8px;
+    background-color: black; }
+    footer .share {
+      display: block;
+      position: fixed; } }
 .strategy {
   max-width: 960px;
   margin: 0 auto; }
@@ -762,5 +1190,329 @@ figure {
     border: 1px solid #000;
     border-radius: 55%;
     text-align: center; } }
+/** MAIN **/
+main {
+  margin: auto;
+  width: 80%; }
+
+h1 {
+  font-weight: bold;
+  /*font-size: 17.774px;*/ }
+
+h2 {
+  /*font-size: 16px;*/ }
+
+/** SECTION **/
+/* Rapport */
+.Rapport {
+  display: block; }
+
+.Rapport h2 {
+  border-bottom: 1px solid #e79655;
+  font-weight: bold; }
+
+.Rapport p {
+  font-size: 14px; }
+
+.Rapport p > span {
+  font-weight: bold; }
+
+.listeDownload li label {
+  width: 70%;
+  position: absolute;
+  float: left; }
+
+.listeDownload li label > svg.reduire {
+  margin-right: 40px; }
+
+.listeDownload li {
+  list-style: none;
+  display: block;
+  padding: 6px;
+  background-color: #fff;
+  margin-bottom: 3px;
+  font-weight: bold; }
+  .listeDownload li .taille {
+    float: right;
+    margin-top: 2px;
+    font-size: 12px;
+    line-height: 1.2; }
+  .listeDownload li:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.Rapport button {
+  color: #e79655;
+  font-size: 14px;
+  font-weight: bold;
+  border-width: 1px;
+  font-family: 'ITCAvantGarde';
+  border-color: #e79655;
+  border-style: solid;
+  background-color: #f8f8f8;
+  float: right;
+  width: 210px;
+  height: 48px;
+  margin-bottom: 12px; }
+
+.Rapport button > svg {
+  float: left;
+  display: inline-block;
+  margin-left: 13px;
+  margin-top: 2px; }
+
+.Rapport button > span {
+  font-weight: lighter;
+  display: inline-block;
+  margin-top: 14px; }
+
+.Rapport button > span > svg {
+  margin-left: -98px; }
+
+/*** Liste deroulant **/
+.deroulant:hover .sous-menu {
+  display: block; }
+
+.sous-menu {
+  display: block;
+  position: relative;
+  margin-top: 63px;
+  margin-bottom: -12px;
+  margin-right: -7px;
+  margin-right: -7px;
+  background-color: #f8f8f8; }
+
+.deroulant .sous-menu li:after {
+  content: ""; }
+
+.sous-menu li {
+  display: block;
+  margin-bottom: 1px;
+  background-color: #f8f8f8; }
+
+.sous-menu li label {
+  margin-left: 51px;
+  width: 70%;
+  position: absolute;
+  float: left; }
+
+.deroulant .sous-menu li > a {
+  color: white; }
+
+.deroulant .sous-menu li > .hexagon-little {
+  margin-left: 18px;
+  margin-right: 3px;
+  float: right; }
+
+/*****/
+.Rapport form:after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.boutonSVG1 {
+  right: 10px;
+  margin-left: 20px;
+  margin-top: 9px;
+  transform: translateY(-50%);
+  width: 33px;
+  float: right; }
+  .boutonSVG1 .check {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .boutonSVG1 input {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .boutonSVG1:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.boutonSVG1-little {
+  margin-left: 20px;
+  margin-top: 9px;
+  transform: translateY(-50%);
+  float: right;
+  width: 27px; }
+  .boutonSVG1-little .check {
+    left: 40%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%); }
+  .boutonSVG1-little input {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .boutonSVG1-little:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/*** Publication */
+.Publication {
+  clear: both;
+  display: block;
+  margin-top: 10%; }
+
+.Publication h2 {
+  border-bottom: 1px solid #e79655;
+  font-weight: bold; }
+
+.Publication li {
+  display: inline-flex;
+  list-style: none;
+  width: 48%; }
+
+.Publication h4 {
+  font-weight: bold;
+  color: #e79655;
+  margin-bottom: 40px; }
+
+.Publication li > span {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: lighter;
+  float: right; }
+
+.Publication div {
+  display: block; }
+
+.Publication .download {
+  display: block; }
+
+.Publication .download > .hexagon {
+  margin-left: 12px; }
+
+.Publication li > div.descriptionIMG > a .taille {
+  margin-left: -1px;
+  margin-top: -33px;
+  display: block; }
+
+.btnSVG {
+  transform: translateY(-50%);
+  width: 33px;
+  display: block;
+  margin-top: 24px;
+  margin-left: 12px; }
+  .btnSVG .fleche {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+/** AutresDocs */
+.AutresDocs {
+  clear: both;
+  display: block;
+  margin-top: 5%; }
+
+.AutresDocs h2 {
+  border-bottom: 1px solid #e79655;
+  font-weight: bold; }
+
+.AutresDocs li {
+  list-style: none;
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 2px;
+  font-weight: bold;
+  position: relative; }
+  .AutresDocs li:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+.AutresDocs li .taille {
+  font-size: 12px;
+  line-height: 1.2;
+  float: right;
+  margin-top: 16px;
+  margin-right: 62px; }
+
+.titreDoc {
+  display: inline-block;
+  width: 70%;
+  float: left; }
+
+.boutonSVG2 {
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 33px; }
+  .boutonSVG2 .fleche {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+/* Mode responsive*/
+@media screen and (max-width: 580px) {
+  /** RAPPORT PERSONNALISE **/
+  .listeDownload li label {
+    display: inline-block;
+    width: 50%; }
+
+  .listeDownload li > label > svg.reduire {
+    margin-right: 20px; }
+
+  .listeDownload li > a {
+    display: flex; }
+
+  .listeDownload li > .hexagon {
+    display: block;
+    margin-right: -17px; }
+
+  input {
+    display: none; }
+
+  .sous-menu {
+    margin-top: 60px;
+    margin-bottom: -31px;
+    margin-right: -7px; }
+
+  .boutonSVG1-little {
+    width: 26px; }
+    .boutonSVG1-little .check {
+      left: 40%;
+      position: absolute;
+      top: 40%;
+      transform: translate(-50%, -50%); }
+
+  /** PUBLICATION **/
+  .Publication li {
+    display: block;
+    width: 100%;
+    margin-bottom: 57px;
+    text-align: center; }
+
+  .Publication img {
+    display: block;
+    width: 30%; }
+
+  .Publication div {
+    float: right;
+    width: 66%;
+    margin-top: -73px; }
+
+  .Publication .download > .btnSVG {
+    margin-left: 84px; }
+
+  /*** AUTRES DOCS **/
+  .AutresDocs li .taille {
+    float: none; } }
+/*# sourceMappingURL=document.css.map */
 
 /*# sourceMappingURL=style.css.map */

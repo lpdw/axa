@@ -1,4 +1,23 @@
 
+@import "variables";
 
+@font-face
+{
+  font-family: 'ITCAvantGarde';
+  src: url("../fonts/itc-avant-garde.otf");
+}
+
+html,
+body
+{
+  margin: auto;
+  font-family: 'ITCAvantGarde';
+  background-color: #f8f8f8;
+  font-size: 14px;
+}
+
+
+@import "pages/index";
 @import "pages/strategy";
+@import "pages/document";
 // @import "pages/document";

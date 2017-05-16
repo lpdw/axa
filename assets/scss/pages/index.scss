@@ -1,18 +1,3 @@
-@import "variables";
-
-@font-face
-{
-  font-family: 'ITCAvantGarde';
-  src: url("../../fonts/itc-avant-garde.otf");
-}
-
-body
-{
-  margin: auto;
-  font-family: 'ITCAvantGarde';
-  background-color: #f8f8f8;
-  font-size: 14px;
-}
 
 /** HEADER **/
 header {
@@ -27,20 +12,27 @@ header {
   position: absolute;
   font-weight: 700;
   right: 0;
+  font-size: 20px;
   width: 73px;
   margin-top: -45px;
   line-height: 0.882;
   text-align: center;
 
   .textR {
-    font-weight: lighter;;
+    font-weight: lighter;
+    display: block;
+  }
+  .textR2 {
+    font-size: 14px;
+    font-weight: bold;
     display: block;
   }
 
 }
-
+.regards2 span {
+  color: #e79655; }
 .regards span {
-  }
+  color: black; }
 
 
 ul
@@ -61,7 +53,7 @@ ul
     -webkit-transform: matrix(2.25798, 0, 0, 2.25798, 0, 0);
     -ms-transform: matrix(2.25798, 0, 0, 2.25798, 0, 0);
     position: absolute;
-    left: 250.218px;
+    left: 218.218px;
     top: 97.126px;
     width: 101.253px;
     height: 49.982px;
@@ -79,7 +71,7 @@ ul
  .menu {
    padding: 1%;
    display: block;
-   height: 44px;
+   height: 50px;
 
  }
 
@@ -194,9 +186,9 @@ ul
 }
 
 /** CONTENU **/
-#bg
+#bgIndex
 {
-  background-image: url("../../img/home/axa_hopwork_070.jpg");
+  background-image: url("../img/home/axa_hopwork_070.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -216,7 +208,7 @@ ul
   position: absolute;
 
   svg {
-    width: 218px;
+    width: 236px;
     height: 252px;
   }
 }
@@ -236,7 +228,7 @@ ul
   transform:rotate(29deg);
   display: block;
   p {
-    font-size: 18px;
+    font-size: 16px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.333;
@@ -257,79 +249,76 @@ ul
 
 .polygon li:nth-child(1)
 {
-  left: 291px;
+  left: 219px;
   top: 208px;
 }
 
 .polygon li:nth-child(1) p
 {
-  left: 35px;
+  left: 47px;
 
 }
 
 .polygon li:nth-child(2)
 {
-
-  left: 387px;
-  top: 369px;
+  left: 325px;
+  top: 382px;
 
 }
 .polygon li:nth-child(2) p
 {
-left: 35px;
+  left: 59px;
+  top:91px;
 
 }
 .polygon li:nth-child(3)
 {
 
-  left: 479px;
+  left: 422px;
   top: 205px;
 }
 
 .polygon li:nth-child(3) p
 {
-  left: 7px;
+  left: 71px;
   top: 91px;
-
 }
 
 .polygon li:nth-child(4)
 {
-  left: 667px;
+  left: 625px;
   top: 202px;
 
 }
 .polygon li:nth-child(4) p
 {
-  left: 51px;
-  top: 91px;
+  left: 63px;
+  top: 102px;
 
 }
 
 .polygon li:nth-child(5)
 {
-  left: 764px;
-  top: 364px;
+  left: 730px;
+  top: 376px;
 
 }
 .polygon li:nth-child(5) p
 {
-  left: 51px;
-  top: 91px;
+  left: 58px;
+  top: 90px;
 
 }
 
 .polygon li:nth-child(6)
 {
-  left: 576px;
-  top: 367px;
+  left: 527px;
+  top: 380px;
 }
 .polygon li:nth-child(6) p
 {
-  left: 51px;
+  left: 56px;
   top: 91px;
-
-
 }
 
 .polygon li svg:hover #Polygone1 {
@@ -345,18 +334,18 @@ left: 35px;
 .polygon li svg:hover #Polygone6 {
   fill: yellow; }
 
-
-footer {
-  position: absolute;
-  display: block;
-  bottom:0;
-  padding: 8px;
-  background-color: black;
-  .share {
-    display: none;
+  footer {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    padding: 8px;
+    background-color: black;
+    .share {
+      display: block;
+      position: fixed;
+    }
   }
 
-}
   /** RESPONSIVE **/
 
   @media screen and (max-width : 580px) {
@@ -436,11 +425,13 @@ footer {
 
     .logo {
       position: absolute;
-      left: 88px;
+      left: 67px;
       top: 86px;
 
         img {
-          width: 76%;
+          margin: -2px;
+          width: 72%;
+          margin-left: 41px;
         }
 
     }
@@ -448,7 +439,7 @@ footer {
 
     .polygon {
       margin: auto;
-      position: relative;
+      position: absolute;
 
       &:after {
         content: "";
@@ -488,11 +479,11 @@ footer {
     font-weight: bold;
     font-size: 30px;
     color: black;
-    right: 9px;
-    top: 140px;
+    right: 7px;
+    top: 145px;
     text-align: center;
 
-    .textR {
+    .textR2 {
       display: none;
     }
 
@@ -518,6 +509,12 @@ footer {
       top: 188px;
 
     }
+
+    .polygon li:nth-child(2) p {
+    left: 59px;
+    top: 58px;
+    }
+
     .polygon li:nth-child(3)
     {
       left: 163px;
@@ -528,8 +525,17 @@ footer {
     {
       left: 28px;
       width: 136px;
+      top:58px;
 
     }
+
+    .polygon li:nth-child(4) p
+    {
+      left: 51px;
+      top: 58px;
+
+    }
+
 
     .polygon li {
       svg {
@@ -547,7 +553,7 @@ footer {
 
     /**  CONTENT **/
 
-    #bg {
+    #bgIndex {
       height: 100vh;
       background-position: (17%, 50%);
       // background-image: url("../../img/home/axa_hopwork_070-mobile.png");
@@ -575,7 +581,7 @@ footer {
     footer {
       position: fixed;
       display: block;
-      bottom:0;
+      top:604px;
       padding: 8px;
       background-color: black;
       .share {
