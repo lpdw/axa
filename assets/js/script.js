@@ -1,14 +1,15 @@
   var check = document.getElementsByClassName('box-check');
-
+  var checkIcone = document.getElementsByClassName('check');
   var checkThis = false;
   var filesis = filesis < 0 ? 0 : 0;
-  var click = 0;
-
+  var clickss = 0;
+  var clicks = 0;
   for (var n = 0; n < check.length; n++) {
   var checkSvg = check[n].parentNode.parentNode;
   check[n].addEventListener("change", countFileSize);
-  checkSvg.addEventListener("change", hideCheckOrNot);
+  checkSvg.addEventListener("click", hideCheckOrNot,clickss);
   check[n].style.opacity = 0;
+  checkIcone[n].style.opacity = 0;
   //checkSvg.querySelector('.check').style.display = "none";
 }
 
@@ -23,14 +24,12 @@ function countFileSize(){
   }
 }
 
-function hideCheckOrNot(){
-  //.querySelectorAll('.check').style.display = "none";
-
+function hideCheckOrNot(clikss){
   if(this.click){
-    this.querySelector('.check').style.opacity = 1;
-    //this.querySelector('.check').translate(150,150);
-    click += 1;
-    var testModulo = (click % 2);
+    clickss += 1;
+    var testModulo = (clickss % 2);
+    //Need modif ... cause selector updated
+    if(testModulo == 1){this.querySelector('.check').style.opacity = 1;clickss = 1;testModulo = (clickss % 2);}
+    else{this.querySelector('.check').style.opacity = 0;clickss = 0;}
   }
-  if(testModulo == 1) this.querySelector('.check').style.opacity = 0;
 }
